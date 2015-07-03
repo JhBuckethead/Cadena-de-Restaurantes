@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-07-2015 a las 23:17:55
+-- Tiempo de generación: 03-07-2015 a las 23:31:54
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -145,6 +145,21 @@ CREATE TABLE IF NOT EXISTS `tipo` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id_usuarios` int(11) NOT NULL,
+  `id_persona` int(11) DEFAULT NULL,
+  `user` varchar(45) DEFAULT NULL,
+  `pass` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id_usuarios`),
+  KEY `fk_personas_idx` (`id_persona`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `valoraciones`
 --
 
@@ -197,6 +212,12 @@ ALTER TABLE `persona`
 --
 ALTER TABLE `productos`
   ADD CONSTRAINT `fk_empresa` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id_empresa`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Filtros para la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD CONSTRAINT `fk_personas` FOREIGN KEY (`id_persona`) REFERENCES `persona` (`id_persona`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `valoraciones`
