@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-07-2015 a las 23:31:54
+-- Tiempo de generación: 04-07-2015 a las 00:57:45
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -30,7 +30,22 @@ CREATE TABLE IF NOT EXISTS `categoria` (
   `id_categoria` int(11) NOT NULL AUTO_INCREMENT,
   `categoria` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_categoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+
+--
+-- Volcado de datos para la tabla `categoria`
+--
+
+INSERT INTO `categoria` (`id_categoria`, `categoria`) VALUES
+(1, 'Pizzeria'),
+(2, 'Cafeteria'),
+(3, 'Restaurant'),
+(4, 'Eventos Sociales (alimentacion)'),
+(5, 'Heladeria'),
+(6, 'Marisqueria'),
+(7, 'Licoreria'),
+(8, 'Comida Rapida'),
+(9, 'Comida Vegetariana');
 
 -- --------------------------------------------------------
 
@@ -58,6 +73,7 @@ CREATE TABLE IF NOT EXISTS `empresa` (
   `id_categoria` int(11) NOT NULL,
   `direccion` varchar(45) DEFAULT NULL,
   `descripcion` varchar(45) DEFAULT NULL,
+  `url` varchar(300) NOT NULL,
   PRIMARY KEY (`id_empresa`,`id_categoria`),
   KEY `fk_categoria_idx` (`id_categoria`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -109,6 +125,8 @@ CREATE TABLE IF NOT EXISTS `persona` (
   `direccion` varchar(45) DEFAULT NULL,
   `num_cuenta` varchar(45) DEFAULT NULL,
   `id_tipo` int(11) NOT NULL,
+  `usuario` varchar(10) NOT NULL,
+  `pass` varchar(10) NOT NULL,
   PRIMARY KEY (`id_persona`,`id_tipo`),
   KEY `fk_tipo_idx` (`id_tipo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -126,6 +144,7 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `precio` double DEFAULT NULL,
   `id_empresa` int(11) NOT NULL,
   `stock` varchar(45) DEFAULT NULL,
+  `url` varchar(300) NOT NULL,
   PRIMARY KEY (`id_producto`,`id_empresa`),
   KEY `fk_empresa_idx` (`id_empresa`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
@@ -140,22 +159,15 @@ CREATE TABLE IF NOT EXISTS `tipo` (
   `id_tipo` int(11) NOT NULL AUTO_INCREMENT,
   `tipo` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id_tipo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Volcado de datos para la tabla `tipo`
 --
 
-CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id_usuarios` int(11) NOT NULL,
-  `id_persona` int(11) DEFAULT NULL,
-  `user` varchar(45) DEFAULT NULL,
-  `pass` varchar(45) DEFAULT NULL,
-  PRIMARY KEY (`id_usuarios`),
-  KEY `fk_personas_idx` (`id_persona`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+INSERT INTO `tipo` (`id_tipo`, `tipo`) VALUES
+(1, 'Administrador'),
+(2, 'Cliente');
 
 -- --------------------------------------------------------
 
@@ -212,12 +224,6 @@ ALTER TABLE `persona`
 --
 ALTER TABLE `productos`
   ADD CONSTRAINT `fk_empresa` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id_empresa`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `usuarios`
---
-ALTER TABLE `usuarios`
-  ADD CONSTRAINT `fk_personas` FOREIGN KEY (`id_persona`) REFERENCES `persona` (`id_persona`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `valoraciones`
