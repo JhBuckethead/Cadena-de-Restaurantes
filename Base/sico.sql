@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-07-2015 a las 00:57:45
+-- Tiempo de generación: 06-07-2015 a las 23:59:31
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -210,8 +210,8 @@ ALTER TABLE `facturas`
 -- Filtros para la tabla `facturas_detalle`
 --
 ALTER TABLE `facturas_detalle`
-  ADD CONSTRAINT `fk_factura` FOREIGN KEY (`id_factura`) REFERENCES `facturas` (`id_factura`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_detalle` FOREIGN KEY (`id_detalle`) REFERENCES `detalle` (`id_detalle`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_detalle` FOREIGN KEY (`id_detalle`) REFERENCES `detalle` (`id_detalle`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_factura` FOREIGN KEY (`id_factura`) REFERENCES `facturas` (`id_factura`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `persona`
