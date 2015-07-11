@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-07-2015 a las 03:06:34
+-- Tiempo de generación: 11-07-2015 a las 18:57:51
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -57,8 +57,10 @@ CREATE TABLE IF NOT EXISTS `detalle` (
   `id_detalle` int(11) NOT NULL AUTO_INCREMENT,
   `id_producto` int(11) NOT NULL,
   `cantidad` int(11) DEFAULT NULL,
+  `id_factura` int(11) DEFAULT NULL,
   PRIMARY KEY (`id_detalle`,`id_producto`),
-  KEY `fk_productos_idx` (`id_producto`)
+  KEY `fk_productos_idx` (`id_producto`),
+  KEY `fk_facturas_idx` (`id_factura`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -86,26 +88,11 @@ CREATE TABLE IF NOT EXISTS `empresa` (
 
 CREATE TABLE IF NOT EXISTS `facturas` (
   `id_factura` int(11) NOT NULL AUTO_INCREMENT,
-  `fecha` timestamp NOT NULL,
+  `fecha` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `id_persona` int(11) NOT NULL,
   PRIMARY KEY (`id_factura`),
   KEY `fk_persona_idx` (`id_persona`),
   KEY `persona_idx` (`id_persona`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `facturas_detalle`
---
-
-CREATE TABLE IF NOT EXISTS `facturas_detalle` (
-  `id_intermedia` int(11) NOT NULL AUTO_INCREMENT,
-  `id_factura` int(11) DEFAULT NULL,
-  `id_detalle` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_intermedia`),
-  KEY `fk_detalle_idx` (`id_detalle`),
-  KEY `fk_factura_idx` (`id_factura`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
@@ -136,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `persona` (
 --
 
 INSERT INTO `persona` (`id_persona`, `nombres`, `mail`, `sexo`, `cedula`, `fecha_nacimiento`, `telefono`, `direccion`, `num_cuenta`, `id_tipo`, `usuario`, `pass`) VALUES
-(1, 'Pamela', 'pamela@gmail.com', 'Femenino', '1102235621', '2015-07-13', 98541236, 'Sauces', '115236524781', 1, 'pamela', 'pamela');
+(1, 'Pamela', 'pamela@gmail.com', 'Femenino', '1102235621', '2015-07-01', 98541236, 'Sauces', '115236524781', 1, 'pamela', 'pamela');
 
 -- --------------------------------------------------------
 
@@ -199,7 +186,8 @@ CREATE TABLE IF NOT EXISTS `valoraciones` (
 -- Filtros para la tabla `detalle`
 --
 ALTER TABLE `detalle`
-  ADD CONSTRAINT `fk_productos` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_productos` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_facturas` FOREIGN KEY (`id_factura`) REFERENCES `facturas` (`id_factura`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `empresa`
@@ -212,13 +200,6 @@ ALTER TABLE `empresa`
 --
 ALTER TABLE `facturas`
   ADD CONSTRAINT `persona` FOREIGN KEY (`id_persona`) REFERENCES `persona` (`id_persona`) ON DELETE NO ACTION ON UPDATE NO ACTION;
-
---
--- Filtros para la tabla `facturas_detalle`
---
-ALTER TABLE `facturas_detalle`
-  ADD CONSTRAINT `fk_detalle` FOREIGN KEY (`id_detalle`) REFERENCES `detalle` (`id_detalle`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_factura` FOREIGN KEY (`id_factura`) REFERENCES `facturas` (`id_factura`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `persona`
