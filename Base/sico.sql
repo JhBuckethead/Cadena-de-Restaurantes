@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-07-2015 a las 23:59:31
+-- Tiempo de generación: 11-07-2015 a las 03:06:34
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -129,7 +129,14 @@ CREATE TABLE IF NOT EXISTS `persona` (
   `pass` varchar(10) NOT NULL,
   PRIMARY KEY (`id_persona`,`id_tipo`),
   KEY `fk_tipo_idx` (`id_tipo`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Volcado de datos para la tabla `persona`
+--
+
+INSERT INTO `persona` (`id_persona`, `nombres`, `mail`, `sexo`, `cedula`, `fecha_nacimiento`, `telefono`, `direccion`, `num_cuenta`, `id_tipo`, `usuario`, `pass`) VALUES
+(1, 'Pamela', 'pamela@gmail.com', 'Femenino', '1102235621', '2015-07-13', 98541236, 'Sauces', '115236524781', 1, 'pamela', 'pamela');
 
 -- --------------------------------------------------------
 
