@@ -1,0 +1,41 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fmodern\fcharset0 CourierNewPSMT;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs28 \cf0 \expnd0\expndtw0\kerning0
+\'97javier\'97\
+subflujos son flujos alternos (cambiar nombres de titulo)\
+pre-condiciones son del caso no del actor (arreglar premoniciones)\
+----\
+\'97galo--\'a0\
+valoraciones corregir muchas operaciones (diagramas de secuencia)\
+revisar diagramas de secuencia no complicarse (diagramas de secuencia)\
+------\'a0\
+\'97jose--\
+poner los detalles en el diagrama de arquitectura, sustentarlos por que cada cosa (Unir documentos de arquitectura)\
+------\
+\'97jhonson--\
+arreglar diagrama de caso de uso (agregar pedidos(incluir facturaci\'f3n) y pago)\
+\'97\'97\
+\
+\'97Jose\
+Gestion de Empresa \
+Gestion de Producto\
+\'97\
+\
+\'97jhonson--\
+Registro Clientes\
+\'97-\
+\
+\'97Galo\
+Realizar Pedido\
+\
+\'97Javier\
+Enviar Pago\
+\'97\
+\
+USAR LAS CLASES PARA CADA TAREA (COMO EN JAVA, PARA LLAMARLOS COMO OBJETOS PARA USARLOS, ETC)\
+}
