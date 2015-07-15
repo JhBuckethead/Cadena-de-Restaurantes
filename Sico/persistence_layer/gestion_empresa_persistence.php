@@ -18,11 +18,11 @@
 	if (!function_exists('consultar_categoriass')){
 	  function consultar_categoriass($categoria)
 	  {
-		include ("conect.php");
-		$SQL_con="SELECT id_categoria FROM categoria WHERE categoria='".$categoria."'";
-		$resultado_cat= mysql_query($SQL_con) or die(mysql_error($link));;
-		$rowCat = mysql_fetch_array($resultado_cat,MYSQL_ASSOC);
-		return $rowCat;
+			include ("conect.php");
+			$SQL_con="SELECT id_categoria FROM categoria WHERE categoria='".$categoria."'";
+			$resultado_cat= mysql_query($SQL_con) or die(mysql_error($link));;
+			$rowCat = mysql_fetch_array($resultado_cat,MYSQL_ASSOC);
+			return $rowCat;
 		}
 	
 	}
@@ -75,8 +75,7 @@
 		$SQL_dele2="DELETE FROM productos WHERE id_empresa='".$id."'";
 		$resultado_elimi=mysql_query($SQL_dele2)or die(mysql_error($link));
 		$SQL_dele="DELETE FROM empresa WHERE id_empresa='".$id."'";
-		$resultado_elimi=mysql_query($SQL_dele)or die(mysql_error($link));
-		
-		}
+		$resultado_elimi=mysql_query($SQL_dele)or die(mysql_error($link));		
+	  }
 	}
 ?>

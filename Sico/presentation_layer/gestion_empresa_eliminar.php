@@ -9,7 +9,7 @@
 	}
 	else{
 		$empresa = recuperar_empresa($_GET["id"]);
-		echo "<div align=center><h1>ELIMINAR EMPRESA</h1><br><h2>".$empresa["nombre"]."<br>direccion: ".$empresa["direccion"]."<br><br><br>";
+		echo "<div align=center><h1>ELIMINAR EMPRESA</h1><br><h2>".$empresa->get_nombre()."<br>direccion: ".$empresa->get_direccion()."<br><br><br>";
 		
 		echo "<notif>ESTA SEGURO?</notif><br><br>";
 		echo "<h3>SE BORRARA LA EMPRESA Y TODOS LOS PRODUCTOS QUE OFRECE LA MISMA</h3>";

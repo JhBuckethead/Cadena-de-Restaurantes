@@ -1,27 +1,19 @@
 <?php
-if (!class_exists('empresa')) {
-  class empresa{
+	class producto{
 		var $nombre;
-		var $categoria;
-		var $direccion;
 		var $descripcion;
+		var $precio;
+		var $empresa;
+		var $stock;
 		var $url;
-		var $id_empresa;
 		public function __construct(){			
 		} 
-		public function __construct2($id_empresa_n,$nombre_n,$categoria_n,$direccion_n,$descripcion_n,$url_n){
-			$this->id_empresa=$id_empresa_n;
+		public function __construct2($nombre_n,$categoria_n,$direccion_n,$descripcion_n,$url_n){
 			$this->nombre=$nombre_n;
 			$this->categoria=$categoria_n;
 			$this->direccion=$direccion_n;
 			$this->descripcion=$descripcion_n;
 			$this->url=$url_n;
-		} 
-		public function set_id_empresa($id_empresa_n){
-			$this->id_empresa=$id_empresa_n;
-		} 
-		public function get_id_empresa(){
-			return $this->id_empresa;
 		} 
 		
 		public function set_nombre($nombre_n){
@@ -38,17 +30,23 @@ if (!class_exists('empresa')) {
 			return $this->descripcion;
 		} 
 		
-		public function set_categoria($categoria_n){
-			$this->categoria=$categoria_n;
+		public function set_precio($precio_n){
+			$this->precio=$precio_n;
 		} 
-		public function get_categoria(){
-			return $this->categoria;
+		public function get_precio(){
+			return $this->precio;
 		} 
-		public function set_direccion($direccion_n){
-			$this->direccion=$direccion_n;
+		public function set_empresa($empresa_n){
+			$this->empresa=$empresa_n;
 		} 
-		public function get_direccion(){
-			return $this->direccion;
+		public function get_empresa(){
+			return $this->empresa;
+		} 
+		public function set_stock($stock_n){
+			$this->url=$stock;
+		} 
+		public function get_stock(){
+			return $this->stock;
 		} 
 		public function set_url($url_n){
 			$this->url=$url_n;
@@ -57,6 +55,4 @@ if (!class_exists('empresa')) {
 			return $this->url;
 		} 
 	}
-}
-	
 ?>
