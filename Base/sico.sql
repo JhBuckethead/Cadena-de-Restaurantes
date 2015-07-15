@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-07-2015 a las 18:57:51
+-- Tiempo de generación: 15-07-2015 a las 22:09:09
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -78,7 +78,15 @@ CREATE TABLE IF NOT EXISTS `empresa` (
   `url` varchar(300) NOT NULL,
   PRIMARY KEY (`id_empresa`,`id_categoria`),
   KEY `fk_categoria_idx` (`id_categoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- Volcado de datos para la tabla `empresa`
+--
+
+INSERT INTO `empresa` (`id_empresa`, `nombre`, `id_categoria`, `direccion`, `descripcion`, `url`) VALUES
+(1, 'Pescaderia El chinito', 6, 'Loja', 'Comida del mar a su plato', 'http://static.amarillasinternet.com/pictures/200000_300000/280000_290000/281000_282000/281300_281400/281305/banners/281305_a.jpg'),
+(2, 'Topsy', 5, 'Loja', 'Helados en general.', 'http://www.loaizacomunicaciones.com.ec/_documentos/image/noticias/14/logo-topsy.png');
 
 -- --------------------------------------------------------
 
@@ -137,11 +145,21 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `descripcion` varchar(45) DEFAULT NULL,
   `precio` double DEFAULT NULL,
   `id_empresa` int(11) NOT NULL,
-  `stock` varchar(45) DEFAULT NULL,
+  `stock` int(45) DEFAULT NULL,
   `url` varchar(300) NOT NULL,
   PRIMARY KEY (`id_producto`,`id_empresa`),
   KEY `fk_empresa_idx` (`id_empresa`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id_producto`, `nombre`, `descripcion`, `precio`, `id_empresa`, `stock`, `url`) VALUES
+(1, 'ceviche', 'comida del mar', 5, 1, 20, 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Ceviche_mixto_890.JPG'),
+(2, 'sopa marinera', 'sopa del mar', 4.5, 1, 50, 'http://www.photorecipestepbystep.com/wp-content/uploads/2012/10/sopa-marinera.jpg'),
+(3, 'Helado de coco', 'Gelatina con coco.', 0.75, 2, 30, 'http://4.bp.blogspot.com/-Gzcm8HgW5PM/U6sMRy1XDrI/AAAAAAAAACg/h_nHeS1A9Ic/s850/h2.jpg'),
+(4, 'Pastel de cumpleaños', 'De tamaño para 15 porciones', 10, 2, 100, 'http://img.fiesta101.com.s3.amazonaws.com/wp-content/uploads/2011/08/torta1.jpg');
 
 -- --------------------------------------------------------
 
@@ -186,8 +204,8 @@ CREATE TABLE IF NOT EXISTS `valoraciones` (
 -- Filtros para la tabla `detalle`
 --
 ALTER TABLE `detalle`
-  ADD CONSTRAINT `fk_productos` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  ADD CONSTRAINT `fk_facturas` FOREIGN KEY (`id_factura`) REFERENCES `facturas` (`id_factura`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `fk_facturas` FOREIGN KEY (`id_factura`) REFERENCES `facturas` (`id_factura`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `fk_productos` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id_producto`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
 -- Filtros para la tabla `empresa`
