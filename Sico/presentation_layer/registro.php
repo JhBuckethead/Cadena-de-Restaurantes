@@ -1,3 +1,5 @@
+<?php include("../bussines_layer/comprobar_sesion.php");?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +22,20 @@
 		<div class="main">
 <!-- header -->
 			<header>
-				<h1><a href="index.html" id="logo">Deliccio Classic European Cuisine</a></h1>
+				<h1><a href="index.php" id="logo">Deliccio Classic European Cuisine</a></h1>
+				<!--
+				<?php if($sesion) : ?>
+					Bienvenido <?= $_SESSION['nombre'] ?>
+					<a href="../bussines_layer/logout.php">Cerrar Sesion</a>
+					<?php endif; ?> 
+				-->
 				<nav>
 					<ul id="menu">
-						<li><a href="index.html">Inicio</a></li>
-						<li><a href="busqueda.html">Busqueda</a></li>
-						<li><a href="sugerencias.html">Sugerencias</a></li>
-						<li><a href="registro/opcion_registro.html">Registro</a></li>
-						<li><a href="acerca.html">Acerca de</a></li>
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="busqueda.php">Busqueda</a></li>
+						<li><a href="sugerencias.php">Sugerencias</a></li>
+						<li><a href="registro/opcion_registro.php">Registro</a></li>
+						<li><a href="acerca.php">Acerca de</a></li>
 					</ul>
 				</nav>
 			</header><div class="ic">More Website Templates  @ TemplateMonster.com - August 1st 2011!</div>

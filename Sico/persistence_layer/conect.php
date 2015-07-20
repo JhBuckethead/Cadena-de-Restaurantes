@@ -9,5 +9,4 @@
 		echo "Error de conexion a la db";
 		exit();
 	}
-
 ?>
