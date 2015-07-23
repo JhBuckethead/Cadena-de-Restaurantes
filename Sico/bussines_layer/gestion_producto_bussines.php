@@ -1,18 +1,18 @@
 <?php	
 	if (!function_exists('catalogo_producto')){
 		
-		function catalogo_producto()
+		function catalogo_producto($estado)
 			{		
 				foreach (glob("../persistence_layer/*.php") as $filename)
 				{
 					include $filename;
 				}
 				include ("../class/producto.php");
-				$producto = consulta_productos();
+				$producto = consulta_productos($estado);
 				foreach ($producto as $pro) 
 				{					
 					$clase_producto = new producto;	
-					$clase_producto->__construct2($pro["id_producto"],$pro["no1"],null,$pro["precio"],$pro["no2"],null,$pro["url"]);		
+					$clase_producto->__construct2($pro["id_producto"],$pro["no1"],null,$pro["precio"],$pro["no2"],null,$pro["url"],$pro["estado"]);		
 					$arreglo_clases[]=$clase_producto;
 				}				
 				return $arreglo_clases;
@@ -47,13 +47,13 @@
 			}
 			$rowPro=consultar_producto($id);
 			$clase_producto = new producto;	
-			$clase_producto->__construct2($rowPro["id_producto"],$rowPro["nombre"],$rowPro["descripcion"],$rowPro["precio"],$rowPro["id_empresa"],$rowPro["stock"],$rowPro["url"]);								
+			$clase_producto->__construct2($rowPro["id_producto"],$rowPro["nombre"],$rowPro["descripcion"],$rowPro["precio"],$rowPro["id_empresa"],$rowPro["stock"],$rowPro["url"],$rowPro["estado"]);								
 			return $clase_producto;
 		}
 	}
 	
 	if (!function_exists('insertar_producto')){
-		function insertar_producto($nombre,$descripcion,$precio,$empresa,$stock,$url)
+		function insertar_producto($nombre,$descripcion,$precio,$empresa,$stock,$url,$estado)
 		{	
 			include ("../class/producto.php");
 			foreach (glob("../persistence_layer/*.php") as $filename)
@@ -61,8 +61,8 @@
 				include $filename;
 			}
 			$clase_producto = new producto;	
-			$clase_producto->__construct2(null,$nombre,$descripcion,$precio,$empresa,$stock,$url);		
-			ingresar_producto($clase_producto->get_nombre(),$clase_producto->get_descripcion(),$clase_producto->get_precio(),$clase_producto->get_empresa(),$clase_producto->get_stock(),$clase_producto->get_url());
+			$clase_producto->__construct2(null,$nombre,$descripcion,$precio,$empresa,$stock,$url,$estado);		
+			ingresar_producto($clase_producto->get_nombre(),$clase_producto->get_descripcion(),$clase_producto->get_precio(),$clase_producto->get_empresa(),$clase_producto->get_stock(),$clase_producto->get_url(),$clase_producto->get_estado());
 		}
 	}
 	
@@ -90,19 +90,19 @@
 				include $filename;
 			}
 			$clase_producto = new producto;	
-			$clase_producto->__construct2($id,$nombre,$descripcion,$precio,$empresa,$stock,$url);		
+			$clase_producto->__construct2($id,$nombre,$descripcion,$precio,$empresa,$stock,$url,1);		
 			modificar_producto($clase_producto->get_nombre(),$clase_producto->get_descripcion(),$clase_producto->get_precio(),$clase_producto->get_empresa(),$clase_producto->get_stock(),$clase_producto->get_url(),$clase_producto->get_id_producto());			
 		}
 	}
 	
-	if (!function_exists('borrar_producto')){
-		function borrar_producto($id)
+	if (!function_exists('baja_alta_producto2')){
+		function baja_alta_product($id,$estado)
 		{	
 			foreach (glob("../persistence_layer/*.php") as $filename)
 			{
 				include $filename;
 			}
-			eliminar_producto($id);
+			baja_alta_producto($id,$estado);
 		}
 	}
-?>
+?>s

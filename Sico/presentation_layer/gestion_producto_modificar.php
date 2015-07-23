@@ -4,7 +4,7 @@
 	include ("../bussines_layer/gestion_producto_bussines.php");
 	if(isset ($_POST["nombre"])){
 		$rowEmp=recuperar_empresa($_POST["empresa"]);	
-		actualizar_producto($_POST["nombre"],$_POST["descripcion"],$_POST["precio"],$rowEmp->get_empresa(),$_POST["stock"],$_POST["url"],$_POST["id"]);
+		actualizar_producto($_POST["nombre"],$_POST["descripcion"],$_POST["precio"],$rowEmp->get_empresa(),$_POST["stock"],$_POST["url"],$_POST["id"],1);
 		echo "<div align=center><h1>SU PRODUCTO SE HA MODIFICADO CON EXITO!!
 		<meta http-equiv='Refresh' content='2;url=gestion_producto.php'></font></h1></div>";
 	}else{	

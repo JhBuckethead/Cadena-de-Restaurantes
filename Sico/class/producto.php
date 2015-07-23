@@ -8,9 +8,10 @@
 			var $empresa;
 			var $stock;
 			var $url;
+			var $estado;
 			public function __construct(){			
 			} 
-			public function __construct2($id_producto_n,$nombre_n,$descripcion_n,$precio_n,$empresa_n,$stock_n,$url_n){
+			public function __construct2($id_producto_n,$nombre_n,$descripcion_n,$precio_n,$empresa_n,$stock_n,$url_n,$estado_n){
 				$this->id_producto=$id_producto_n;
 				$this->nombre=$nombre_n;
 				$this->descripcion=$descripcion_n;
@@ -18,6 +19,7 @@
 				$this->empresa=$empresa_n;
 				$this->stock=$stock_n;
 				$this->url=$url_n;
+				$this->estado=$estado_n;
 			} 
 			public function set_id_producto($id_producto_n){
 				$this->id_producto=$id_producto_n;
@@ -63,6 +65,12 @@
 			} 
 			public function get_url(){
 				return $this->url;
+			}
+			public function set_estado($estado_n){
+				$this->estado=$estado_n;
+			} 
+			public function get_estado(){
+				return $this->estado;
 			} 
 		}
 	}

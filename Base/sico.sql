@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-07-2015 a las 22:09:09
+-- Tiempo de generación: 23-07-2015 a las 23:12:10
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
 
@@ -76,17 +76,21 @@ CREATE TABLE IF NOT EXISTS `empresa` (
   `direccion` varchar(45) DEFAULT NULL,
   `descripcion` varchar(45) DEFAULT NULL,
   `url` varchar(300) NOT NULL,
+  `estado` int(11) NOT NULL,
   PRIMARY KEY (`id_empresa`,`id_categoria`),
   KEY `fk_categoria_idx` (`id_categoria`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Volcado de datos para la tabla `empresa`
 --
 
-INSERT INTO `empresa` (`id_empresa`, `nombre`, `id_categoria`, `direccion`, `descripcion`, `url`) VALUES
-(1, 'Pescaderia El chinito', 6, 'Loja', 'Comida del mar a su plato', 'http://static.amarillasinternet.com/pictures/200000_300000/280000_290000/281000_282000/281300_281400/281305/banners/281305_a.jpg'),
-(2, 'Topsy', 5, 'Loja', 'Helados en general.', 'http://www.loaizacomunicaciones.com.ec/_documentos/image/noticias/14/logo-topsy.png');
+INSERT INTO `empresa` (`id_empresa`, `nombre`, `id_categoria`, `direccion`, `descripcion`, `url`, `estado`) VALUES
+(1, 'Pescaderia El chinito2', 2, 'Loja1', 'Comida del mar a su plato', 'http://static.amarillasinternet.com/pictures/200000_300000/280000_290000/281000_282000/281300_281400/281305/banners/281305_a.jpg', 1),
+(2, 'Topsy', 5, 'Loja', 'Helados en general.', 'http://www.loaizacomunicaciones.com.ec/_documentos/image/noticias/14/logo-topsy.png', 0),
+(3, 'jo2', 2, '2', '2dasda', '222d2', 1),
+(4, 'cccccklkkllklk', 5, 'aaaasssss', 'sssuouoo', 'sssslkllkll', 1),
+(5, 'jjjj', 2, 'jjdsadsa', 'j', 'jjjjj', 1);
 
 -- --------------------------------------------------------
 
@@ -147,19 +151,28 @@ CREATE TABLE IF NOT EXISTS `productos` (
   `id_empresa` int(11) NOT NULL,
   `stock` int(45) DEFAULT NULL,
   `url` varchar(300) NOT NULL,
+  `estado` int(11) NOT NULL,
   PRIMARY KEY (`id_producto`,`id_empresa`),
   KEY `fk_empresa_idx` (`id_empresa`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`id_producto`, `nombre`, `descripcion`, `precio`, `id_empresa`, `stock`, `url`) VALUES
-(1, 'ceviche', 'comida del mar', 5, 1, 20, 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Ceviche_mixto_890.JPG'),
-(2, 'sopa marinera', 'sopa del mar', 4.5, 1, 50, 'http://www.photorecipestepbystep.com/wp-content/uploads/2012/10/sopa-marinera.jpg'),
-(3, 'Helado de coco', 'Gelatina con coco.', 0.75, 2, 30, 'http://4.bp.blogspot.com/-Gzcm8HgW5PM/U6sMRy1XDrI/AAAAAAAAACg/h_nHeS1A9Ic/s850/h2.jpg'),
-(4, 'Pastel de cumpleaños', 'De tamaño para 15 porciones', 10, 2, 100, 'http://img.fiesta101.com.s3.amazonaws.com/wp-content/uploads/2011/08/torta1.jpg');
+INSERT INTO `productos` (`id_producto`, `nombre`, `descripcion`, `precio`, `id_empresa`, `stock`, `url`, `estado`) VALUES
+(1, 'ceviche', 'comida del mar', 50, 1, 20, 'https://upload.wikimedia.org/wikipedia/commons/c/c1/Ceviche_mixto_890.JPG', 1),
+(2, 'sopa marinera33', 'sopa del mar', 53, 2, 50, 'http://www.photorecipestepbystep.com/wp-content/uploads/2012/10/sopa-marinera.jpg', 0),
+(3, 'Helado de coco', 'Gelatina con coco.', 0.75, 2, 30, 'http://4.bp.blogspot.com/-Gzcm8HgW5PM/U6sMRy1XDrI/AAAAAAAAACg/h_nHeS1A9Ic/s850/h2.jpg', 0),
+(4, 'Pastel de cumpleaños', 'De tamaño para 15 porciones', 10, 2, 100, 'http://img.fiesta101.com.s3.amazonaws.com/wp-content/uploads/2011/08/torta1.jpg', 0),
+(5, 'esfero', 'loja', 12, 2, 200, 'http://www.pceverest.com/imagenes/productos/esfero-espia-dorado.jpg', 0),
+(6, 'esfero', 'lojs', 10, 2, 100, 'http://www.pceverest.com/imagenes/productos/esfero-espia-dorado.jpg', 0),
+(7, 'ninguno', 'ninguno', 1, 1, 1, 'ninguno', 1),
+(8, 'al fin ', 'al fin ', 1, 2, 10, 'http://www.pceverest.com/imagenes/productos/esfero-espia-dorado.jpg', 0),
+(9, 'galo', 'galo', 1, 2, 1, 'lslsls', 0),
+(10, 'galo', 'galo', 1, 2, 1, 'galogalogalo', 0),
+(11, 'jose', 'jose', 1, 1, 1, 'dasd', 1),
+(12, 'pedro', 'pedro', 2, 1, 323, 'pedro', 1);
 
 -- --------------------------------------------------------
 

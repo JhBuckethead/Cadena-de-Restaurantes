@@ -1,10 +1,11 @@
 <?php  
 	if (!function_exists('consulta_empresas')){
-	  function consulta_empresas()
+	  function consulta_empresas($estado)
 	  {
-		$SQL_con="SELECT emp.id_empresa,emp.nombre, cat.categoria, emp.url
+		$SQL_con="SELECT emp.estado,emp.id_empresa,emp.nombre, cat.categoria, emp.url
 					FROM empresa as emp 
-					INNER JOIN categoria as cat on emp.id_categoria=cat.id_categoria";	
+					INNER JOIN categoria as cat on emp.id_categoria=cat.id_categoria
+					Where emp.estado=".$estado."";	
 		$resultado_tipo= mysql_query($SQL_con);
 
 	   while ($rowEmp = mysql_fetch_array($resultado_tipo,MYSQL_ASSOC))	
@@ -27,11 +28,11 @@
 	
 	}
 	if (!function_exists('ingresar_empresa')){
-	  function ingresar_empresa($nombre,$categoria,$direccion,$descripcion,$url)
+	  function ingresar_empresa($nombre,$categoria,$direccion,$descripcion,$url,$estado)
 	  {
 		include ("conect.php");
-		$SQL_ins="INSERT INTO empresa (nombre,id_categoria,direccion,descripcion,url) 
-				VALUES ('".$nombre."','".$categoria."','".$direccion."','".$descripcion."','".$url."')"; 
+		$SQL_ins="INSERT INTO empresa (nombre,id_categoria,direccion,descripcion,url,estado) 
+				VALUES ('".$nombre."','".$categoria."','".$direccion."','".$descripcion."','".$url."','".$estado."')"; 
 		$resultado_ins= mysql_query($SQL_ins) or die(mysql_error($link));
 		}
 	}
@@ -68,13 +69,13 @@
 		}
 	}
 	
-	if (!function_exists('eliminar_empresa')){
-	  function eliminar_empresa($id)
+	if (!function_exists('alta_baja_empres')){
+	  function alta_baja_empres($id,$estado)
 	  {
 		include ("conect.php");		
-		$SQL_dele2="DELETE FROM productos WHERE id_empresa='".$id."'";
+		$SQL_dele2="UPDATE productos SET estado='".$estado."' WHERE id_empresa=".$id.""; 
 		$resultado_elimi=mysql_query($SQL_dele2)or die(mysql_error($link));
-		$SQL_dele="DELETE FROM empresa WHERE id_empresa='".$id."'";
+		$SQL_dele="UPDATE empresa SET estado='".$estado."' WHERE id_empresa=".$id.""; 
 		$resultado_elimi=mysql_query($SQL_dele)or die(mysql_error($link));		
 	  }
 	}

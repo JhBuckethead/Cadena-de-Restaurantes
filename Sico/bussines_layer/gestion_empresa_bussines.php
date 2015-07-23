@@ -1,18 +1,18 @@
 <?php	
 	if (!function_exists('catalogo_empresa')){
 		
-		function catalogo_empresa()
+		function catalogo_empresa($estado)
 			{		
 				foreach (glob("../persistence_layer/*.php") as $filename)
 				{
 					include $filename;
 				}
 				include ("../class/empresa.php");
-				$empresa = consulta_empresas();
+				$empresa = consulta_empresas($estado);
 				foreach ($empresa as $emp) 
 				{					
 					$clase_empresa = new empresa;	
-					$clase_empresa->__construct2($emp["id_empresa"],$emp["nombre"],$emp["categoria"],null,null,$emp["url"]);		
+					$clase_empresa->__construct2($emp["id_empresa"],$emp["nombre"],$emp["categoria"],null,null,$emp["url"],$emp["estado"]);		
 					$arreglo_clases[]=$clase_empresa;
 				}
 				
@@ -36,7 +36,7 @@
 	}
 	
 	if (!function_exists('insertar_empresa')){
-		function insertar_empresa($nombre,$categoria,$direccion,$descripcion,$url)
+		function insertar_empresa($nombre,$categoria,$direccion,$descripcion,$url,$estado)
 		{	
 			include ("../class/empresa.php");
 			foreach (glob("../persistence_layer/*.php") as $filename)
@@ -44,8 +44,8 @@
 				include $filename;
 			}
 			$clase_empresa = new empresa;	
-			$clase_empresa->__construct2(null,$nombre,$categoria,$direccion,$descripcion,$url);		
-			ingresar_empresa($clase_empresa->get_nombre(),$clase_empresa->get_categoria(),$clase_empresa->get_direccion(),$clase_empresa->get_descripcion(),$clase_empresa->get_url());
+			$clase_empresa->__construct2(null,$nombre,$categoria,$direccion,$descripcion,$url,$estado);		
+			ingresar_empresa($clase_empresa->get_nombre(),$clase_empresa->get_categoria(),$clase_empresa->get_direccion(),$clase_empresa->get_descripcion(),$clase_empresa->get_url(),$clase_empresa->get_estado());
 		}
 	}
 	
@@ -77,7 +77,7 @@
 				include $filename;
 			}
 			$clase_empresa = new empresa;	
-			$clase_empresa->__construct2($id,$nombre,$categoria,$direccion,$descripcion,$url);		
+			$clase_empresa->__construct2($id,$nombre,$categoria,$direccion,$descripcion,$url,1);		
 			modificar_empresa($clase_empresa->get_nombre(),$clase_empresa->get_categoria(),$clase_empresa->get_direccion(),$clase_empresa->get_descripcion(),$clase_empresa->get_url(),$clase_empresa->get_id_empresa());
 		}
 	}
@@ -92,19 +92,19 @@
 			}
 			$rowEmp = consulta_empresa($id);
 			$clase_empresa = new empresa;	
-			$clase_empresa->__construct2($rowEmp["id_empresa"],$rowEmp["nombre"],$rowEmp["id_categoria"],$rowEmp["direccion"],$rowEmp["descripcion"],$rowEmp["url"]);				
+			$clase_empresa->__construct2($rowEmp["id_empresa"],$rowEmp["nombre"],$rowEmp["id_categoria"],$rowEmp["direccion"],$rowEmp["descripcion"],$rowEmp["url"],$rowEmp["estado"]);				
 			return $clase_empresa;
 		}
 	}
 	
-	if (!function_exists('borrar_empresa')){
-		function borrar_empresa($id)
+	if (!function_exists('alta_baja_empresa')){
+		function alta_baja_empresa($id,$estado)
 		{	
 			foreach (glob("../persistence_layer/*.php") as $filename)
 			{
 				include $filename;
 			}
-			eliminar_empresa($id);
+			alta_baja_empres($id,$estado);
 		}
 	}
 ?>

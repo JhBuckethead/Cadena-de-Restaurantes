@@ -4,7 +4,7 @@
 	include ("../bussines_layer/gestion_empresa_bussines.php");
 	if(isset ($_POST["nombre"])){
 		$rowCat=recuperar_categoria($_POST["categoria"]);
-		insertar_empresa($_POST["nombre"],$rowCat->get_categoria(),$_POST["direccion"],$_POST["descripcion"],$_POST["url"]);
+		insertar_empresa($_POST["nombre"],$rowCat->get_categoria(),$_POST["direccion"],$_POST["descripcion"],$_POST["url"],1);
 		
 		echo "<div align=center><h1>SU EMPRESA SE HA GUARDADO CON EXITO!!
 		<meta http-equiv='Refresh' content='2;url=gestion_empresa.php'></font></h1></div>";
