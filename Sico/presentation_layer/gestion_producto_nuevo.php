@@ -21,7 +21,7 @@
 			echo("</select> </td></tr>");
 			echo "<tr><th><h4>Descripcion</th><td><input type='text' required name=descripcion></td></tr>";
 			echo "<tr><th><h4>Precio</th><td><input type='text' required name=precio></td></tr>";
-			echo "<tr><th><h4>Stock</th><td><input type='text' required name=stock></td></tr>";
+			echo "<tr><th><h4>Stock</th><td><input type='number' required min='1' max='999' name=stock></td></tr>";
 			echo "<tr><th><h4>Imagen</th><td><input type='text' required name=url placeholder='URL de la imagen'></td></tr>";
 			echo "</table><br>";
 		echo "<input type='submit' value='Guardar'>";

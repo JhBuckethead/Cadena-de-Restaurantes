@@ -7,6 +7,19 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .wrapper {width:100%;overflow:hidden}
 .wrap{overflow:hidden;width:965px;margin-left:-5px;padding-left:5px}
 /* Global properties */
+body.pagem {background:url(../images/bg_top.jpg) center 0 repeat #faf3ed;border:0;font:14px Georgia, "Times New Roman", Times, serif;color:#200;line-height:24px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {	margin:0 auto;	width:960px}
+.body1m {background:url(../images/bg_top_img.jpg) top center no-repeat}
+.body2m {background:#faf3ed} 
+.body3m {background:url(../images/bg_bot.jpg) top center repeat}
+.body4m {background:url(../images/bg_bot.jpg) top center no-repeat}
+.body5m {background:url(../images/slider_shadow.png) center 508px no-repeat}
+.body6m {background:url(../images/bg_top.jpg) top repeat-x}
+/* main layout */
+
 body {background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;border:0;font:14px Georgia, "Times New Roman", Times, serif;color:#200;line-height:24px}
 .ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 .css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
@@ -18,7 +31,6 @@ body {background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;border:0;font
 .body4 {background:url(../images/bg_bot_img.jpg) top center no-repeat}
 .body5 {background:url(../images/slider_shadow.png) center 508px no-repeat}
 .body6 {background:url(../images/bg_top.jpg) top repeat-x}
-/* main layout */
 a {color:#a80002;text-decoration:none;outline:none}
 a:hover {text-decoration:underline}
 h1 {float:left;padding:0px 0 0 36px}

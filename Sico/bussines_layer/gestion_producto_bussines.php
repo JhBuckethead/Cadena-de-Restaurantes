@@ -105,4 +105,4 @@
 			baja_alta_producto($id,$estado);
 		}
 	}
-?>s
+?>
