@@ -7,7 +7,7 @@
 	include ("../persistence_layer/conect.php");
 
 
-	if(isset($_POST["nuevo"])){echo "HOLA";
+	if(isset($_POST["nuevo"])){
 		realizar_pedido($_POST["id"],$_POST["cantidad"]);
 
 		echo "<div align=center><h1>Agregado correctamente
@@ -15,20 +15,41 @@
 		}
 		else{
 			//ESTA QUEMADO EL CLIENTE====
-		$carrito=consultar_carrito(1);
+		list ($carrito_persona,$carrito,$pago)=consultar_carrito(1);
 		
+		echo"<f>";
 		echo "<div align=center><h1>Carrito</font></h1></div>";	
 		echo "<section class='cols'><div align=center class='box'><div>";
 		echo 	"<br><h4>Prceder a Pagar</h4><a href='#' class='button1'><img src='images/pagar.jpg' height='50' width='50'> </a></div></section>"; 
 		echo "<div name=empresas>";
+		echo "<h1>Prefactura</h1><br><br>";
+		
+		echo "<form method = 'Post' action='enviar_pago.php'>";
+		echo "<p>Nombre: ".$carrito_persona['nombres']."</p>";
+		echo "<table cellspacing=1 cellspadding=1 align=left border=2 >";
+			echo "<tr >";
+				echo "<td>Nombre</td>";
+				echo "<td>Fecha</td>";
+				echo "<td>Cantidad</td>";
+				echo "<td>Total</td>";
+				
+			echo "</tr>";
+		
 	for ($i = 0; $i <count($carrito); $i++) 	
 	{	
-		echo "<section id=empre class='cols'><div align=center class='box'><div>";
-		echo	"<h3><br> ".$carrito[$i]['nombre']." </h3><p class='pad_bot1'>Fecha ". $carrito[$i]['fecha']."</p><p class='pad_bot1'>Precio ".$carrito[$i]['precio']."</p><img src='". $carrito[$i]['url']."'<height='80' width='80' /img>";
-		echo "<p class='pad_bot1'>Cantidad ".$carrito[$i]['cantidad']." </p>";
-		echo "<br> <br> <tr><th>Cantidad</th><td><input type='number' value= ".$carrito[$i]['cantidad']."name='cantidad'></td></tr></div></section>";
+	echo "<tr>";
+		echo	"<td>".$carrito[$i]['nombre']." </td>
+		<td name= 'fecha'>". $carrito[$i]['fecha']."</td>
+		<td>".$carrito[$i]['cantidad']."</td>
+		<td>".($carrito[$i]['precio'])*($carrito[$i]['cantidad'])."</td>";
+		//$pago=$carrito[$i]['precio']*$carrito[$i]['cantidad']+$pago;
+		echo "</tr>";	
+			
 	}	
+	
 	echo "</div>";
+	echo "<h1 >Total A pagar: </h1>".$pago."";
+	echo "<input type='submit' value='Pagar'><form>";
 	
 	}
 ?>
