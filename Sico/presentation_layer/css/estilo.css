@@ -1,0 +1,149 @@
+body{
+	font-family: Times New Roman;
+	background:url(../images/bg_bot.jpg);
+	font-size: 20px;
+}
+table{
+	margin: 0 auto;
+	display: in
+
+
+}
+td{
+
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+header{
+	background:url(../images/bg_top_img.jpg);
+	margin: 10 auto;
+	width: 100%;
+	color: #ffffff;
+	display: block;
+	padding: 2em;
+	text-align: center;
+}
+img{
+	width: 50px;
+}
+img#empresa{
+	width: 100px;
+	height: 100px;
+
+}
+section#log,nav{
+	display: inline-block;
+}
+
+section#log{
+		width: 100%;
+		background:url(../images/bg_top_img.jpg);
+}
+nav{
+	width: 75%;
+	background:url(../images/box_top.jpg);
+}
+nav ul{
+	list-style: none;
+
+}
+nav li{
+	display: inline-block;
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;	
+	padding-right: 20px; 
+
+}
+
+nav li a:hover{
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 0.1em 0.1em;
+	margin: 0.1em 0.1em;	
+
+
+	/*font-size: 1.2em; 	background-image: linear-gradient(to bottom,#FFA500,#FFFF00);
+
+	padding: 0;*/
+}
+section#factura{
+	display: inline-block;
+	
+	}
+section#pago{
+	display: inline-block;
+	padding: 4em;
+
+	}
+section#contenidos{
+	width: 20%;
+	background:url(../images/bg-23.png);
+
+	text-align: center;
+	margin-top: 0.3em;
+	display: inline-block;
+	margin-right: 2em;
+
+}
+aside{
+	display: inline-block;
+	width: 32%;
+	background:black;
+	color: #fff;
+}
+section#contenidos2,footer{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	color: black;
+	text-align: center;
+	margin-top: 0.3em;
+	padding: 0.5em;
+	background: #FFD700;
+}
+
+input{
+	background:url(../images/bg_top_img.jpg);
+	color: white;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+tr:hover{
+	
+	color: white;
+	background: #000;
+
+}
+
+input#cantidad{
+	background:url(../images/bg_bot.jpg);
+	color:black;
+	width: 50px;
+	height: 40px;
+	font-size: 12px;
+
+}
+input#agregar{
+	background:url(../images/bg_top_img.jpg);
+	font-size: 14px;
+	color:white;
+	width: 70px;
+	height: 40px;
+	padding: 1em;
+	border-radius: 0.5em;
+
+}
+
+input:hover{
+	background: black;
+}
+input:hover#agregar{
+	background: black;
+}
+}
