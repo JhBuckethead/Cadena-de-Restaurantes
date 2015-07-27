@@ -5,7 +5,7 @@
 		$SQL_con="SELECT emp.estado,emp.id_empresa,emp.nombre, cat.categoria, emp.url
 					FROM empresa as emp 
 					INNER JOIN categoria as cat on emp.id_categoria=cat.id_categoria
-					Where emp.estado=".$estado."";	
+					Where emp.estado=".$estado." order by emp.nombre";	
 		$resultado_tipo= mysql_query($SQL_con);
 
 	   while ($rowEmp = mysql_fetch_array($resultado_tipo,MYSQL_ASSOC))	
@@ -78,5 +78,21 @@
 		$SQL_dele="UPDATE empresa SET estado='".$estado."' WHERE id_empresa=".$id.""; 
 		$resultado_elimi=mysql_query($SQL_dele)or die(mysql_error($link));		
 	  }
+	}
+	
+	if (!function_exists('busquedas_emp')){
+	  function busquedas_emp($estado,$criterio)
+	  {
+		$SQL_con="SELECT emp.estado,emp.id_empresa,emp.nombre, cat.categoria, emp.url
+					FROM empresa as emp 
+					INNER JOIN categoria as cat on emp.id_categoria=cat.id_categoria
+					Where emp.estado=".$estado." AND emp.nombre LIKE '%".$criterio."%' order by emp.nombre";	
+		$resultado_tipo= mysql_query($SQL_con);
+	   while ($rowEmp = mysql_fetch_array($resultado_tipo,MYSQL_ASSOC))	
+		{
+		  $empresa[]=$rowEmp;
+		}
+		return $empresa;
+		}
 	}
 ?>

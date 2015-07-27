@@ -1,11 +1,11 @@
 <?php  
-	if (!function_exists('consulta_productos')){
-	  function consulta_productos($estado)
+	if (!function_exists('consulta_product')){
+	  function consulta_product($estado,$empresa)
 	  {
 		$SQL_con="select pro.estado,pro.id_producto,pro.nombre as no1,pro.precio, emp.nombre no2,pro.url 
 				from productos as pro 
 				INNER JOIN empresa as emp on pro.id_empresa=emp.id_empresa
-				WHere pro.estado=".$estado."";	
+				WHere pro.estado=".$estado." AND pro.id_empresa=".$empresa." order by pro.nombre";	
 		$resultado_tipo= mysql_query($SQL_con);
 
 	   while ($rowPro = mysql_fetch_array($resultado_tipo,MYSQL_ASSOC))	
@@ -77,5 +77,22 @@
 		$SQL_upd="UPDATE productos SET estado=".$estado." WHERE id_producto=".$id.""; 
 		$resultado_elimi=mysql_query($SQL_upd)or die(mysql_error($link));
 	  }
+	}
+	
+	if (!function_exists('busque_product')){
+	  function busque_product($estado,$empresa,$criterio)
+	  {
+		$SQL_con="select pro.estado,pro.id_producto,pro.nombre as no1,pro.precio, emp.nombre no2,pro.url 
+				from productos as pro 
+				INNER JOIN empresa as emp on pro.id_empresa=emp.id_empresa
+				WHere pro.estado=".$estado." AND pro.id_empresa=".$empresa." AND pro.nombre LIKE '%".$criterio."%' order by pro.nombre ";	
+		$resultado_tipo= mysql_query($SQL_con);
+
+	   while ($rowPro = mysql_fetch_array($resultado_tipo,MYSQL_ASSOC))	
+		{
+		  $producto[]=$rowPro;
+		}
+		return $producto;
+		}
 	}
 ?>

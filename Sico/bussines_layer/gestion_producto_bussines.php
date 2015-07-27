@@ -1,21 +1,21 @@
 <?php	
 	if (!function_exists('catalogo_producto')){
 		
-		function catalogo_producto($estado)
+		function catalogo_producto($estado,$empresa)
 			{		
 				foreach (glob("../persistence_layer/*.php") as $filename)
 				{
 					include $filename;
 				}
 				include ("../class/producto.php");
-				$producto = consulta_productos($estado);
+				$producto = consulta_product($estado,$empresa);	
 				foreach ($producto as $pro) 
-				{					
+				{	
 					$clase_producto = new producto;	
-					$clase_producto->__construct2($pro["id_producto"],$pro["no1"],null,$pro["precio"],$pro["no2"],null,$pro["url"],$pro["estado"]);		
+					$clase_producto->__construct2($pro["id_producto"],$pro["no1"],null,$pro["precio"],$pro["no2"],null,$pro["url"],$pro["estado"]);	
 					$arreglo_clases[]=$clase_producto;
-				}				
-				return $arreglo_clases;
+				}	
+			return $arreglo_clases;
 			}
 	}
 	if (!function_exists('catalogo_empresas2')){
@@ -105,4 +105,25 @@
 			baja_alta_producto($id,$estado);
 		}
 	}
+	
+	if (!function_exists('busqueda_producto')){
+		
+		function busqueda_producto($estado,$empresa,$criterio)
+			{		
+				foreach (glob("../persistence_layer/*.php") as $filename)
+				{
+					include $filename;
+				}
+				include ("../class/producto.php");
+				$producto = busque_product($estado,$empresa,$criterio);	
+				foreach ($producto as $pro) 
+				{	
+					$clase_producto = new producto;	
+					$clase_producto->__construct2($pro["id_producto"],$pro["no1"],null,$pro["precio"],$pro["no2"],null,$pro["url"],$pro["estado"]);	
+					$arreglo_clases[]=$clase_producto;
+				}	
+			return $arreglo_clases;
+			}
+	}
+	
 ?>
