@@ -1,6 +1,8 @@
 <?php
-if (!class_exists('cliente')) {
-  class cliente{
+if (!class_exists('cliente')) 
+{
+  	class cliente
+  	{
 		var $id_cliente;
         var $nombre;
 		var $mail;
@@ -109,7 +111,7 @@ if (!class_exists('cliente')) {
 		public function set_pass($pass_n){
 			$this->pass=$pass_n;
 		} 
-		public function get_url(){
+		public function get_pass(){
 			return $this->pass;
 		} 
 	}

@@ -7,6 +7,7 @@ mark, rp, rt, ruby, summary, time {display:inline}
 .wrapper {width:100%;overflow:hidden}
 .wrap{overflow:hidden;width:965px;margin-left:-5px;padding-left:5px}
 /* Global properties */
+
 body.pagem {background:url(../images/bg_top.jpg) center 0 repeat #faf3ed;border:0;font:14px Georgia, "Times New Roman", Times, serif;color:#200;line-height:24px}
 .ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
 .css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
@@ -65,6 +66,7 @@ header {height:121px;padding-top:31px;width:100%;overflow:hidden}
 .slider .pagination a {display:block;width:17px;height:17px;text-indent:-9999px;background:url(../images/buttons.png) right 0 no-repeat}
 .slider .pagination a:hover, .slider .pagination .current a {background-position:left}
 /* content */
+header.a {background: blue}
 #content {padding-bottom:40px}
 #content2 {padding-bottom:31px}
 .pad_left1 {padding-left:30px}
@@ -114,4 +116,16 @@ footer a:hover {text-decoration:none}
 #empre {
 	display: inline-block;
 	}
+#empre {
+	display: inline-block;
+	}
 
+#login{
+	padding-left: 35em;
+	padding-right: 35em;
+}
+
+#login_insert{
+	padding-left: 30em;
+	padding-right: 10em;
+}

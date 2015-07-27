@@ -17,7 +17,7 @@
 		echo "<section class='cols'>
 				<div align=center class='box'>
 				<div>";
-			echo 	"<br><h4>Nuevo Producto</h4><a href='gestion_producto_dar_alta.php' class='button1'><img src='images/nuevo.jpg' height='50' width='50'> </a>
+			echo 	"<br><h4>Nuevo Producto</h4><a href='gestion_producto_nuevo.php' class='button1'><img src='images/nuevo.jpg' height='50' width='50'> </a>
 			<br><form method='get' action='gestion_producto_dar_alta.php'>
 				<input type='text' name='busqueda' size='15' maxlength='20' value=''>
 				<input type='hidden' name='id_empres' size='15' maxlength='20' value='".$_GET['id_empres']."' />

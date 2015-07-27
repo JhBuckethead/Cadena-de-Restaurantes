@@ -18,8 +18,7 @@
 		echo "Email/Contraseña Incorrectos";
 		echo "<script>location.href='registro.html'</script>";
 
-	}else{
-		echo "<br>LOGEO EXITOSO";
-		echo "<script>location.href='index.html'</script>";
+	}else{		
+		echo "<script>location.href='seleccionar_empresa.php'</script>";
 	}
 ?>

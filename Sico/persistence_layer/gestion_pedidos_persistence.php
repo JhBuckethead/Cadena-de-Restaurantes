@@ -27,17 +27,45 @@
 		$SQL_con="SELECT * from pedido as ped
 		INNER JOIN productos AS pro ON ped.id_producto =pro.id_producto
 		where id_persona=".$id_persona."";	
+
+
 		$resultado_ins= mysql_query($SQL_con);
 
 	 while ($rowPedi = mysql_fetch_array($resultado_ins,MYSQL_ASSOC))	
 		{
 		  $carrito[]=$rowPedi;
 		}
-		return $carrito;
+		
+
+		$SQL_con2="SELECT * from persona where id_persona=".$id_persona."";
+		$resultado_ins1= mysql_query($SQL_con2);
+
+	while ($rowPedi1 = mysql_fetch_array($resultado_ins1,MYSQL_ASSOC))	
+		{
+		  $carrito_persona=$rowPedi1;
+		}
+
+		return array ($carrito_persona,$carrito);
 		}
 	}
 
+ 
+	if (!function_exists('empres')){
+	  function empres($estado,$empres)
+	  {
+		$SQL_con="select pro.estado,pro.id_producto,pro.nombre as no1,pro.precio, emp.nombre no2,pro.url 
+				from productos as pro 
+				INNER JOIN empresa as emp on pro.id_empresa=emp.id_empresa
+				WHere pro.estado=".$estado." AND pro.id_empresa=".$empres."";	
+		$resultado_tipo= mysql_query($SQL_con);
 
+	   while ($rowPro = mysql_fetch_array($resultado_tipo,MYSQL_ASSOC))	
+		{
+		  $producto[]=$rowPro;
+		}
+		return $producto;
+		}
+	}
 
 
 ?>
