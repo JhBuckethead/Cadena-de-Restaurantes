@@ -2,6 +2,32 @@
 	echo "<link rel='stylesheet' href='css/style.css' type='text/css' media='all'>";
 	include ("../persistence_layer/conect.php");
 	include ("../bussines_layer/gestion_empresa_bussines.php");
+	echo "<!DOCTYPE html>
+<html lang = 'es'>
+<head>
+	<meta charset = 'utf-8'>
+	<link rel='stylesheet' type='text/css' href='css/estilo.css'>
+	
+</head>
+	<header>
+		<section id='log'>
+				<h1>Gestión de Empresas<h1/>
+
+		</section>
+
+		<nav id='banners'>
+				<ul>
+					<li><a  href='gestion_empresa_nuevo.php'><img src='images/nuevo.jpg' height='25' width='25'><br>Nueva Empresa</a></li>
+					<li><a href='gestion_empresa_dar_alta.php'><img src='images/nuevo2.jpg' height='25' width='25'><br> Dar de Alta</a></li>
+					<li><form method='get' action='gestion_empresa.php'>
+				<input type='text' name='busqueda' size='15' maxlength='20' value='' />					  	
+					<input type='submit' value='Buscar'/>
+					</form>	
+				</ul>	
+		</nav>
+
+	</header>
+<body>";
 	if(isset ($_POST["nombre"])){
 		$rowCat=recuperar_categoria($_POST["categoria"]);
 		insertar_empresa($_POST["nombre"],$rowCat->get_categoria(),$_POST["direccion"],$_POST["descripcion"],$_POST["url"],1);

@@ -2,6 +2,7 @@
 	echo "<link rel='stylesheet' href='css/style.css' type='text/css' media='all'>";
 	include ("../persistence_layer/conect.php");	
 	include ("../bussines_layer/gestion_empresa_bussines.php");
+	
 	if(isset($_GET["borra"]) AND isset($_GET["eliminar"])){
 		alta_baja_empresa($_GET["eliminar"],$_GET["borra"]);
 		echo "<div align=center><h1>SU EMPRESA SE HA DADO DE BAJA CON EXITO!!
