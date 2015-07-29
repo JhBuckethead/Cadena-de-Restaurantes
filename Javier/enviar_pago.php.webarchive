@@ -1,0 +1,1145 @@
+bplist00“_WebSubresources_WebMainResource£‘	
+_WebResourceData_WebResourceMIMEType^WebResourceURL_WebResourceResponseOó/* Getting the new tags to behave */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {display:block}
+mark, rp, rt, ruby, summary, time {display:inline}
+/* Left & Right alignment */
+.left {float:left}
+.right {float:right}
+.wrapper {width:100%;overflow:hidden}
+.wrap{overflow:hidden;width:965px;margin-left:-5px;padding-left:5px}
+/* Global properties */
+
+body.pagem {background:url(../images/bg_top.jpg) center 0 repeat #faf3ed;border:0;font:14px Georgia, "Times New Roman", Times, serif;color:#200;line-height:24px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {	margin:0 auto;	width:960px}
+.body1m {background:url(../images/bg_top_img.jpg) top center no-repeat}
+.body2m {background:#faf3ed} 
+.body3m {background:url(../images/bg_bot.jpg) top center repeat}
+.body4m {background:url(../images/bg_bot.jpg) top center no-repeat}
+.body5m {background:url(../images/slider_shadow.png) center 508px no-repeat}
+.body6m {background:url(../images/bg_top.jpg) top repeat-x}
+/* main layout */
+
+body {background:url(../images/bg_bot.jpg) center 0 repeat #faf3ed;border:0;font:14px Georgia, "Times New Roman", Times, serif;color:#200;line-height:24px}
+.ic, .ic a {border:0;float:right;background:#fff;color:#f00;width:50%;line-height:10px;font-size:10px;margin:-220% 0 0 0;overflow:hidden;padding:0}
+.css3{border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;box-shadow:0 0 4px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 4px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 4px rgba(0, 0, 0, .4);position:relative}
+/* Global Structure */
+.main {	margin:0 auto;	width:960px}
+.body1 {background:url(../images/bg_top_img.jpg) top center no-repeat}
+.body2 {background:#faf3ed} 
+.body3 {background:url(../images/bg_bot.jpg) top center repeat}
+.body4 {background:url(../images/bg_bot_img.jpg) top center no-repeat}
+.body5 {background:url(../images/slider_shadow.png) center 508px no-repeat}
+.body6 {background:url(../images/bg_top.jpg) top repeat-x}
+a {color:#a80002;text-decoration:none;outline:none}
+a:hover {text-decoration:underline}
+h1 {float:left;padding:0px 0 0 36px}
+h2 {font-size:41px;line-height:1.2em;color:#200000;padding:16px 0 12px 0;letter-spacing:-2px}
+h2.letter_spacing {letter-spacing:-3px}
+h3 {font-size:27px;color:#230000;line-height:1.2em;padding:20px 0 9px 0;letter-spacing:-1px}
+h3 span {color:#a80002}
+p {padding-bottom:24px}
+/* header */
+header {height:121px;padding-top:31px;width:100%;overflow:hidden}
+#logo {display:block;background:url(../images/logo.png) 0 0 no-repeat;width:259px;height:94px;text-indent:-9999px}
+#top_nav {float:right;padding:4px 43px 30px 0}
+#top_nav li {float:left;padding:3px 26px 5px 0;background:url(../images/top_line.gif) right 0 no-repeat;margin-right:25px}
+#top_nav li a {display:block;line-height:0}
+#top_nav .end {background:none;padding-right:0;margin-right:0}
+#menu {width:633px;float:right;padding:0 0 0 0}
+#menu li {float:left;padding-left:3px}
+#menu li a {display:block;font-size:24px;color:#faf3ed;line-height:40px;padding:0 20px;height:44px;letter-spacing:-1px}
+#menu li a:hover, #menu .active a {text-decoration:none;background:url(../images/menu_bg.png) repeat}
+.slider_bg {width:100%;height:404px;background:url(../images/bg_slider.jpg) 0 0 no-repeat;position:relative;overflow:hidden;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4);margin-bottom:35px}
+.slider {top:10px;right:10px;position:absolute;z-index:1;width:920px}
+.slider .items {display:none}
+.slider .pic {float:right;position:relative}
+.banner {left:0px;top:0;position:absolute;width:271px;z-index:2;text-align:center}
+.banner strong {font-size:52px;color:#bf0f0a;display:block;line-height:1.2em;text-transform:uppercase;padding:55px 0 0 0;letter-spacing:-2px}
+.banner strong span {display:block;margin-top:-16px}
+.banner b {display:block;font-size:27px;color:#312826;text-transform:uppercase;padding:0 0 23px 0;line-height:1.2em;letter-spacing:-1px}
+.banner p {background:url(../images/quot1.png) 0 0 no-repeat}
+.banner p span {display:block;background:url(../images/quot2.png) right bottom no-repeat;padding:0 0 0 0;color:#6c5f5b;padding-bottom:2px}
+.slider .pagination {position:absolute;z-index:2;bottom:10px;left:107px}
+.slider .pagination li {float:left;padding-right:3px}
+.slider .pagination a {display:block;width:17px;height:17px;text-indent:-9999px;background:url(../images/buttons.png) right 0 no-repeat}
+.slider .pagination a:hover, .slider .pagination .current a {background-position:left}
+/* content */
+header.a {background: blue}
+#content {padding-bottom:40px}
+#content2 {padding-bottom:31px}
+.pad_left1 {padding-left:30px}
+.pad_bot1 {padding-bottom:13px}
+.pad_bot2 {padding-bottom:24px}
+.marg_right1 {margin-right:20px}
+.box {background:url(../images/box_bg.png) repeat;color:#faf3ed;box-shadow:0 0 5px rgba(0, 0, 0, .4);-moz-box-shadow:0 0 5px rgba(0, 0, 0, .4);-webkit-box-shadow:0 0 5px rgba(0, 0, 0, .4)}
+.box > div {background:url(../images/box_top.png) 0 top no-repeat;padding:30px;padding-top:0;overflow:hidden}
+.box h2 {color:#a80002;padding:15px 0 12px 0}
+.box h2 span {color:#faf3ed}
+.box figure {padding-bottom:13px}
+.list1 li a {font-style:italic;padding-left:12px;background:url(../images/marker_1.gif) 1px 8px no-repeat;color:#faf3ed}
+.list_1 {color:#fff}
+.list_1:hover {text-decoration:none}
+.button1 {display:inline-block;font-size:20px;color:#faf3ed;line-height:34px;padding:0 15px;background:#a80002;letter-spacing:-1px}
+.button1:hover {text-decoration:none;color:#1e0000;background:#faf3ed}
+.testimonials li span {float:left;width:40px;height:40px;font-size:30px;color:#faf3ed;line-height:34px;text-align:center;background:#a80002;margin-right:20px}
+.testimonials li p {float:left;width:180px;padding-bottom:15px}
+.testimonials li img {padding-top:2px}
+.line1 {background:url(../images/line_vert1.gif) 285px 0 repeat-y}
+.line2 {background:url(../images/line_vert1.gif) 615px 0 repeat-y}
+.price {margin-top:-7px}
+.price li {overflow:hidden;background:url(../images/price_bg.gif) 0 -6px repeat-x}
+.price a {float:left;color:#220000;background:url(../images/marker_2.gif) 1px 11px no-repeat #faf3ed;padding-left:12px}
+.price a:hover {text-decoration:none;color:#a80002}
+.price span {float:right;background:#faf3ed}
+.address {padding-bottom:0}
+.address span {float:left;width:84px}
+/* footer */
+footer {height:138px;font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;color:#696969;line-height:18px}
+footer a {color:#c53005;text-decoration:underline}
+footer a:hover {text-decoration:none}
+#icons {padding:5px 0 0 0}
+#icons li {float:left;padding-right:9px}
+/* Tooltips */
+.aToolTip {background:#a80002;color:#fff;	margin:0;padding:2px 10px 3px;font-size:11px;position:absolute;line-height:17px}
+.aToolTip .aToolTipContent {position:relative;	margin:0;padding:0}
+/* forms */
+#ContactForm {margin-top:-5px;width:910px}
+#ContactForm span {float:left;width:111px;line-height:20px}
+#ContactForm .wrapper {min-height:24px}
+#ContactForm .textarea_box {min-height:170px;width:100%;overflow:hidden;padding-bottom:9px}
+#ContactForm {}
+#ContactForm a {margin-left:20px;float:right}
+#ContactForm .input {width:399px;height:18px;background:#faf3ed;padding:1px 5px;color:#220000;font:14px Georgia, "Times New Roman", Times, serif;margin:0;float:left}
+#ContactForm textarea {overflow:auto;width:789px;height:163px;background:#faf3ed;padding:1px 5px;color:#220000;font:14px Georgia, "Times New Roman", Times, serif;margin:0}
+#empre {
+	display: inline-block;
+	}
+#empre {
+	display: inline-block;
+	}
+
+#login{
+	padding-left: 35em;
+	padding-right: 35em;
+}
+
+#login_insert{
+	padding-left: 30em;
+	padding-right: 10em;
+}Xtext/css_Rhttp://localhost:8888/Cadena-de-Restaurantes/Sico/presentation_layer/css/style.cssO∫bplist00‘fgX$versionX$objectsY$archiverT$top Ü†Ø#)*0123KLMNOPQRSTUVWXYZ[\]`aU$null›	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1Ä	ÄÄÄÄÄÄÄ”$%&'(WNS.base[NS.relativeÄ ÄÄ_Rhttp://localhost:8888/Cadena-de-Restaurantes/Sico/presentation_layer/css/style.css“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#Aªfõ¥4¬ »”456@JWNS.keysZNS.objects©789:;<=>?Ä	Ä
+ÄÄÄÄÄÄÄ©ACDEFGHIÄÄÄÄÄÄÄÄÄÄVServer\Content-TypeTEtag]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnection_åApache/2.2.26 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.6 PHP/5.5.10 mod_ssl/2.2.26 OpenSSL/0.9.8zf DAV/2 mod_perl/2.0.8 Perl/v5.18.2Xtext/css_"19834e3-1f97-51bdde2c77c80"_Mon, 27 Jul 2015 16:31:30 GMT_Mon, 27 Jul 2015 17:03:44 GMTUbytesT8087_timeout=5, max=100ZKeep-Alive“+,^_\NSDictionary¢^/ó“+,bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—hi_WebResourceResponseÄ    # - 2 7 X ^ y | Ä É Ü â ç ê ó ö ù † £ ¶ ® ™ ¨ Æ ∞ ± ≥ µ ∑ π ª Ω ø ∆ Œ ⁄ ‹ ﬁ ‡5:ENTW`ikmt|áëìïóôõùü°£≠Ø±≥µ∑πªΩø¡»’⁄ËÌ˚
+ Ø∏◊˜"7BGTWZ_swãô´Æƒ             j              ∆‘
+OiÉ/* 
+  make block of css rules 
+  with maximum 20 items each 
+*/
+
+.ad,
+.ads-ad,
+.adframe,
+.sponsors,
+.ads-bblc,
+.bannerAd,
+.bannerAds,
+.adcredits,
+.header-ads,
+.footer-ads,
+.member-ads,
+.ad-wrapper,
+.section-ads,
+.adContainer,
+.card-ad-box,
+.advertising,
+.advertisings,
+.advertisement,
+.advertisements,
+.ad-leaderboard {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+.adunit,
+.adUnit,
+.adhere,
+.adlink,
+.top-ad ,
+.left-ad,
+.right-ad,
+.ad-label,
+.ads-bbll,
+.bottom-ad,
+.footer-ad,
+.mb-rec-ad,
+.adUnitVert,
+.adUnitHorz,
+.advertise-link,
+.ads_arrow_left,
+.ads_arrow_right,
+.adsCategoryTitleLink {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+#ad,
+#ads,
+#tads,
+#adRow,
+#sideAd,
+#sponsors,
+#adchoices,
+#adPreview,
+#contentAd,
+#rhs_block,
+#ad-content,
+#member-ads,
+#adSeedCall,
+#ad-wrapper,
+#divSponAds,
+#frmSponsAds,
+#ad_creative,
+#ad-background,
+#adbarContainer,
+#RadAd_Skyscraper  {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+#ad-case  {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+form[action*="doubleclick."] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+ins[class*="adsbygoogle"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+article[class*="--sponsored"]{
+  display: none !important;
+  visibility: hidden !important;
+}
+
+li[class*="ads-ad"],
+li[class*="featured-ads"],
+li[class*=" promoted-trend"],
+li[class*=" linkedin-sponsor"]{
+  display: none !important;
+  visibility: hidden !important;
+}
+
+param[value*="googleadservices."],
+param[value*="cdnx.tribalfusion"],
+param[data*="pagead2.googlesyndication"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+embed[src*="2mdn."],
+embed[src*="spe.atdmt."],
+embed[src*="h2.msn.com/CIS"],
+embed[flashvars*="fastclick."],
+embed[src*="ads.contentabc."] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+span[class*="adchoice"],
+span[class*="ad-block"],
+span[class*="ads-block"],
+span[class*="-badge-ad"],
+span[class*="--promoted"],
+span[class*="-sponsored"],
+span[title="Why this ad?"],
+span[class*="featured-ads"],
+span[title="Why these ads?"],
+span[class*="sponsored-icon"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+object[data*="s.yimg."],
+object[data*="cdn.adnxs."],
+object[data*="serving-sys"],
+object[data*="2mdn.net/ads"],
+object[data*="cdn.flashtalking"],
+object[data*="pagead2.googlesyndication"],
+object[data*="cdnx.tribalfusion"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+div[id*="adunit"],
+div[id*="AdAuth"],
+div[id*="_fullAd"],
+div[id*="AdSense"],
+div[id*="left-ad"],
+div[id*="right-ad"],
+div[id*="ad-slot-"],
+div[data-ad*="adid"],
+div[class*="promoAd"],
+div[id*="_adSection"],
+div[class*="AdSense"],
+div[class^="ads vert"],
+div[class^="ads horiz"],
+div[class*="-sponsored-"],
+div[class*="AdContainer"],
+div[class*="ads-creative"],
+div[class*="adspace-widget"],
+div[class*="commercial-unit"],
+div[onclick*="MyAdvertisements"],
+div[class*="ads-visurl"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+div[class="ads"],
+div[class="ad sky"],
+div[class*="struq."],
+div[class*="ads-by-"],
+div[id="section ads"],
+div[class*="ads-bbl-"],
+div[class*="banner_ad"],
+div[class*="ads-block"],
+div[class*="chitikaAd"],
+div[id*="ads-container"],
+div[class*="-ads-inner"],
+div[class="section ads"],
+div[class*="center ad "],
+div[class*="advertising"],
+div[class*="adsbygoogle"],
+div[class*="featured-ads"],
+div[class*="advertisement"],
+div[class*="-link-sponsored"],
+div[class*="-content-sponsored"],
+div[id*="google_ads_"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+div[class^="ad-"],
+div[class^="ad_"],
+div[class^="ads-"],
+div[class^="ads_"],
+div[id*="AdSlot_"],
+div[class*="-ad "],
+div[class*="-ads "],
+div[class*="-ads-"],
+div[id*="adPartner"],
+div[id*="displayAd "],
+div[id*="-admarker-"],
+div[id*="member-ads"],
+div[id*="ads_section"],
+div[id*="ad_takeover"],
+div[id*="ad_container"],
+div[id*="-ad-container"],
+div[id*="ad-fullbanner"],
+div[id*="ads_container"],
+div[id*="ad-skyscraper"],
+div[data-item-thumb*="cdn.taboolasyndication"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+div[id*="-ad-"],
+div[id*="-ads-"],
+div[id*="-ads_"],
+div[id*="_ads-"],
+div[id*="-Ads_"],
+div[id*="_Ads-"],
+div[class^="adv_"],
+div[id*="bannerAd_"],
+div[class*="leftAd_"],
+div[class*="-adset-"],
+div[class*="darla-ad"],
+div[class*="rightAd_"],
+div[class*="_adlabel"],
+div[class*="ads-unit"],
+div[class*="_ad_inner"],
+div[class*="ads_slide_"],
+div[data-role*="adloader"],
+div[class*=" promoted-account "],
+div[data-annotation_id*="annotation_"],
+div[id*="ad-slot"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+div[class*="AdBox"],
+div[data-xt-vimp*="duration_in_ms"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+iframe[src*="padstm."],
+iframe[src*="clkrev."],
+iframe[src*="chitika."],
+iframe[id*="AdWrapper"],
+iframe[src*="cuelinks."],
+iframe[src*="srcopenx."],
+iframe[src*="mediaplex."],
+iframe[src*="cdn.betrad."],
+iframe[class*="chitikaAd"],
+iframe[src*="cdn.adfront."],
+iframe[src*="s.yimg.com/rq"],
+iframe[src*="l.yimg.com/rq"],
+iframe[class*="adsbygoogle"],
+iframe[src*="bs.serving-sys"],
+iframe[src*="ads.yldmgrimg."],
+iframe[src*="adserver.yahoo."],
+iframe[src*="fast.gm.demdex."],
+iframe[src*="fast.cam.demdex."],
+iframe[src*="servedby.flashtalking"],
+iframe[src*="4dsply.com"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+iframe[src*="/0AD"],
+iframe[src*="/rd."],
+iframe[src*="adnxs."],
+iframe[src*="openx."],
+iframe[src*="ad120m."],
+iframe[src*="cpmterra."],
+iframe[src*="kliksaya."],
+iframe[src*="ad.kiosked"],
+iframe[id*="google_ads_"],
+iframe[id*="adsonar_serve"],
+iframe[src*="ads.a-static"],
+iframe[name*="google_ads_"],
+iframe[id*="ad-fetch-import"],
+iframe[id*="ad-today-posts-"],
+iframe[src*=".g.doubleclick"],
+iframe[name*="adsonar_serve"],
+iframe[src*="linkedin.com/csp/ads"],
+iframe[src*="tpc.googlesyndication"],
+iframe[src*="ads.as4x.tmcs.ticketmaster"],
+iframe[src*="cdn.flashtalking"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+iframe[src*="betaffs."],
+iframe[src*="iframe.ad"],
+iframe[src*="casalemedia"],
+iframe[src*="smgadserver"],
+iframe[src*="cdn.cxense."],
+iframe[src*="ad.anetwork"],
+iframe[src*="ads.exoclick"],
+iframe[src*="ads.pubmatic"],
+iframe[src*="vindicosuite."],
+iframe[src*="ads.cpxcenter"],
+iframe[src*="ads.clicksor."],
+iframe[src*="rocketadserver"],
+iframe[src*="ads.qadservice"],
+iframe[src*="78.138.126.253"],
+iframe[src*="google.com/uds/afs"],
+iframe[src*="partnerads.ysm.yahoo"],
+iframe[src*="syndication.exoclick."],
+iframe[src*="syndication.traffichaus.com/adserve"],
+iframe[src*="syndication.globaltraffico.com/adserve"],
+iframe[src*="cdn.zeusclicks.com/ads/"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+iframe[src*="an.z5x."],
+iframe[id*="ad-iframe"],
+iframe[src*="/adserve/"],
+iframe[name*="BidVertiser_"],
+iframe[src*="a.tribalfusion"],
+iframe[src*="www.superfish."],
+iframe[src*="i.vizejs.info/"],
+iframe[src*="bcp.crwdcntrl."],
+iframe[src*="ads.adsrvmedia."],
+iframe[src*="bdv.bidvertiser."],
+iframe[src*="//inb.genorithm."],
+iframe[src*="intext.linknavi1"],
+iframe[src*="ads.trafficjunky."],
+iframe[src*="a.visadd.com/script"],
+iframe[src*="linkedin.com/csp/ads"],
+iframe[src*="banners.sexypartners"],
+iframe[src*="static.re-markable00."],
+iframe[src*="altare.sitescoutadserver"],
+iframe[src*="syndication.cntrafficpro"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+iframe[src*="ad."],
+iframe[src*="/ad"],
+iframe[src*="/A="],
+iframe[src*="ads."],
+iframe[src*="addata"],
+iframe[src*="/click"],
+iframe[src*="?click"],
+iframe[src*="=click"],
+iframe[src*="adfarm"],
+iframe[src*="?banner"],
+iframe[src*="adSpace"],
+iframe[src*="adserve"],
+iframe[src*=".banner"],
+iframe[src*=".atwola."],
+iframe[src*="spinbox."],
+iframe[src*="clickurl="],
+iframe[src*="adjuggler"],
+iframe[src*="cas.criteo"],
+iframe[src*="transfer.go"],
+iframe[src*="bluestreak"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+iframe[class^="adbar_"],
+iframe[src*=".falkag."], 
+iframe[src*="connextra."],
+iframe[src*="trackoffer."],
+iframe[src*="fd.rad.msn."],
+iframe[src*="tracksponsor."],
+iframe[id*="merchandisingMERC"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+img[src*="/ads/"],
+img[src*="adnxs."],
+img[src*=".msads."],
+img[src*="aimatch."],
+img[src*="/viewads/"],
+img[src*="adforgames."],
+img[src*="doubleclick."],
+img[src*="/bidvertiser_"],
+img[src*="adChoice/icon"],
+img[src*="ads.a-static."],
+img[src*="engine.fl-ads"],
+img[src*="/ad-publisher-"],
+img[src*="bs.serving-sys"],
+img[src*=".banners.advidi"],
+img[src*=".cdntraffic.com/ads"],
+img[src*="static.fl-ads.com/Advertisers"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+img[src*="adk2"],
+img[src*="struq."],
+img[src*="dotomi."],
+img[src*="adzerk."],
+img[src*="chitika."],
+img[src*="/viewad/"],
+img[class*="ad-label"],
+img[src*="buysellads."],
+img[src*="ad_choices."],
+img[src*="tradedoubler"],
+img[src*="247realmedia"],
+img[src*="advertising."],
+img[src*="s.yimg.com/av"],
+img[src*="p.flite.com/p"],
+img[src*="padsdel.cdnads"],
+img[src*="exoclick.com/banners"],
+img[src*="fbcdn-creative-a.akamaihd"],
+img[src*="pagead2.googlesyndication"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+a[class*="adchoice"] img,
+a[href*="mobileyield"] img,
+a[href*="/AdFeedback"] img,
+a[href*="go.padsdel."] img,
+a[href*="ads.softonic."] img,
+a[href*="turn.com/r/click"] img,
+a[href*="googleadservices"] img,
+a[class*="-ad-attribution"] img,
+a[href*="linkedin.com/ads/"] img,
+a[href*="google.com/adsense"] img,
+a[href*="beap.gemini.yahoo."] img,
+a[href*="adserver.adreactor"] img,
+a[href*="ads.yesadvertising"] img,
+a[href*="clicks.beap.bc.yahoo"] img,
+a[href*="softonicads.com/tracker"] img,
+a[href*="altare.sitescoutadserver"] img,
+a[href*="pagead2.googlesyndication"] img,
+a[href*="facebook.com/campaign/landing"] img,
+a[href*="campaign/landing.php?placement"] img,
+a[href*="syndication.globaltraffico.com/adserve/"] img {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+a[href*="ad."]  img, 
+a[href*="ads."]  img, 
+a[class*="ads-"] img,
+a[href*="/ads/"] img,
+a[href*="/adshows/"] img,
+a[href*="fastclick."] img,
+a[class*="AdChoices"] img,
+a[href*="ad-choices"] img,
+a[href*="shareasale."] img,
+a[href*="/advertising/"] em,
+a[href*="engine.fl-ads"] img,
+a[href*="ads_preference"] img,
+a[href*="/tag/sponsored"] img,
+a[href*="bs.serving-sys"] img,
+a[href*="ads_preferences"] img,
+a[href*="ads.digitalpoint"] img,
+a[class*="-promoted-badge "] img,
+a[href*="banners.sexypartners"] img,
+a[href*="main.exoclick.com/click"] img,
+a[href*="page.kiosked.com/who-served-this-ad"] img {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+a[href*="mgid."] img,
+a[href*="adnxs."] img,
+a[href*="adzerk."] img,
+a[href*="adsrvr."] img,
+a[href*="addata"]  img, 
+a[href*="adfarm"]  img, 
+a[href*="adSpace"]  img, 
+a[href*="adserve"]  img, 
+a[href*="?banner"]  img, 
+a[href*=".banner"]  img, 
+a[href*=".atwola."]  img, 
+a[href*="spinbox."]  img, 
+a[href*="ads.yahoo"] img,
+a[href*="union.ucweb"] img,
+a[href*="adforgames."] img,
+a[href*="doubleclick."] img,
+a[class*="-list-img-ad"] img,
+a[href*="google.com/aclk"] img,
+a[href*="adwords.google."] img,
+a[href*="/yahoo/relevantads."] img {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+a[href*=".bpath."] img,
+a[href*=".chitika."] img,
+a[href*=".vigLink."] img,
+a[href*=".kontera."] img,
+a[href*=".bingads."] img,
+a[href*=".qadabra."] img,
+a[href*="clickurl="]  img, 
+a[href*=".clicksor."] img,
+a[href*="//b4psads."] img,
+a[href*=".ddversal."] img,
+a[href*="bluestreak"]  img, 
+a[href*=".infolinks."] img,
+a[href*="valueclick."]  img, 
+a[href*=".buysellads."] img,
+a[href*=".revenuehits."] img,
+a[href*="//buysellads."] img,
+a[href*=".bidvertiser."] img,
+a[href*=".exitjunction."] img,
+a[href*=".dynamicoxygen."] img,
+a[onmouseover*="AdSolution"] img { 
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="/rd."]  img, 
+a[href*="/0AD"]  img, 
+a[href*=".falkag."]  img, 
+a[href*="advertise"] img,
+a[href*="transfer.go"]  img, 
+a[href*="trackoffer."]  img, 
+a[href*="ebayobjects"]  img,
+a[href*="casalemedia."]  img, 
+a[href*="BurstingPipe"]  img,
+a[href*="tracksponsor."]  img,
+a[href*="sponsors.phtml"]  img, 
+a[href*="realgmtix.phtml"]  img, 
+a[href*="betterbasketball."]  img { 
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="a.r.tv."] img, iframe[src*="a.r.tv."],
+a[href*="a.xanga."] img, iframe[src*="a.xanga."],
+a[href*="ad.abctv."] img, iframe[src*="ad.abctv."],
+a[href*="ad.about."] img, iframe[src*="ad.about."],
+a[href*="ad.abcnews."] img, iframe[src*="ad.abcnews."],
+a[href*="a.softpedia."] img, iframe[src*="a.softpedia."],
+a[href*="ad.asap-asp."] img, iframe[src*="ad.asap-asp."],
+a[href*="a32.g.a.yimg."] img, iframe[src*="a32.g.a.yimg."],
+a[href*="a.consumer.net"] img, iframe[src*="a.consumer.net"],
+a[href*="ad.disney.go."] img, iframe[src*="ad.disney.go."] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+a[href*="ad.isohunt."] img, iframe[src*="ad.isohunt."],
+a[href*="ad.uol.com."] img, iframe[src*="ad.uol.com."],
+a[href*="ad.infoseek."] img, iframe[src*="ad.infoseek."],
+a[href*="ad.dvdforum."] img, iframe[src*="ad.dvdforum."],
+a[href*="ad.usatoday."] img, iframe[src*="ad.usatoday."],
+a[href*="ad.musicmatch."] img, iframe[src*="ad.musicmatch."],
+a[href*="ad.preferences."] img, iframe[src*="ad.preferences."],
+a[href*="ad.img.yahoo.co."] img, iframe[src*="ad.img.yahoo.co."],
+a[href*="ad.tomshardware."] img, iframe[src*="ad.tomshardware."],
+a[href*="ad.howstuffworks."] img, iframe[src*="ad.howstuffworks."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="adfly."] img, iframe[src*="adfly."],
+a[href*="adimg."] img, iframe[src*="adimg."],
+a[href*="adclick."] img, iframe[src*="adclick."],
+a[href*="adbutler."] img, iframe[src*="adbutler."],
+a[href*="adimages."] img, iframe[src*="adimages."],
+a[href*="adbanner."] img, iframe[src*="adbanner."],
+a[href*="ad1.outpost."] img, iframe[src*="ad1.outpost."],
+a[href*="ad.yourmedia."] img, iframe[src*="ad.yourmedia."],
+a[href*="adfarm.mediaplex."] img, iframe[src*="adfarm.mediaplex."],
+a[href*="ad1.emule-project."] img, iframe[src*="ad1.emule-project."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="adlog."] img, iframe[src*="adlog."],
+a[href*="ads.aol."] img, iframe[src*="ads.aol."],
+a[href*="adireland."] img, iframe[src*="adireland."],
+a[href*="adq.nextag."] img, iframe[src*="adq.nextag."],
+a[href*="ads.bigfoot."] img, iframe[src*="ads.bigfoot."],
+a[href*="ads.advance."] img, iframe[src*="ads.advance."],
+a[href*="ads.cdfreaks."] img, iframe[src*="ads.cdfreaks."],
+a[href*="ads.allsites."] img, iframe[src*="ads.allsites."],
+a[href*="ads.amazingmedia."] img, iframe[src*="ads.amazingmedia."],
+a[href*="ads.affiliates.match."] img, iframe[src*="ads.affiliates.match."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="ads.cnn."] img, iframe[src*="ads.cnn."],
+a[href*="ads.com."] img, iframe[src*="ads.com."],
+a[href*="ads.forbes."] img, iframe[src*="ads.forbes."],
+a[href*="ads.eu.msn."] img, iframe[src*="ads.eu.msn."],
+a[href*="ads.eudora."] img, iframe[src*="ads.eudora."],
+a[href*="ads.ezboard."] img, iframe[src*="ads.ezboard."],
+a[href*="ads.discovery."] img, iframe[src*="ads.discovery."],
+a[href*="ads.deviantart."] img, iframe[src*="ads.deviantart."],
+a[href*="ads.firingsquad."] img, iframe[src*="ads.firingsquad."],
+a[href*="ads.clearchannel."] img, iframe[src*="ads.clearchannel."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="ads.icq."] img, iframe[src*="ads.icq."],
+a[href*="ads.ign."] img, iframe[src*="ads.ign."],
+a[href*="ads.imdb."] img, iframe[src*="ads.imdb."],
+a[href*="ads.img.co."] img, iframe[src*="ads.img.co."],
+a[href*="ads.gamespy."] img, iframe[src*="ads.gamespy."],
+a[href*="ads.g4techtv."] img, iframe[src*="ads.g4techtv."],
+a[href*="ads.hollywood."] img, iframe[src*="ads.hollywood."],
+a[href*="ads.gamespyid."] img, iframe[src*="ads.gamespyid."],
+a[href*="ads.indiatimes."] img, iframe[src*="ads.indiatimes."],
+a[href*="ads.guardian.co."] img, iframe[src*="ads.guardian.co."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="ads.msn."] img, iframe[src*="ads.msn."],
+a[href*="ads.iwon."] img, iframe[src*="ads.iwon."],
+a[href*="ads.lycos."] img, iframe[src*="ads.lycos."],
+a[href*="ads.mcafee."] img, iframe[src*="ads.mcafee."],
+a[href*="ads.monster."] img, iframe[src*="ads.monster."],
+a[href*="ads.macupdate."] img, iframe[src*="ads.macupdate."],
+a[href*="ads.infospace."] img, iframe[src*="ads.infospace."],
+a[href*="ads.linuxjournal."] img, iframe[src*="ads.linuxjournal."],
+a[href*="ads.lycos-europe."] img, iframe[src*="ads.lycos-europe."],
+a[href*="ads.linuxquestions."] img, iframe[src*="ads.linuxquestions."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="ads.osdn."] img, iframe[src*="ads.osdn."],
+a[href*="ads.scifi."] img, iframe[src*="ads.scifi."],
+a[href*="ads.neowin."] img, iframe[src*="ads.neowin."],
+a[href*="ads.simtel."] img, iframe[src*="ads.simtel."],
+a[href*="ads.nypost."] img, iframe[src*="ads.nypost."],
+a[href*="ads.osnews."] img, iframe[src*="ads.osnews."],
+a[href*="ads.nytimes."] img, iframe[src*="ads.nytimes."],
+a[href*="ads.phpclasses."] img, iframe[src*="ads.phpclasses."],
+a[href*="ads.rockstargames."] img, iframe[src*="ads.rockstargames."],
+a[href*="ads.rottentomatoes."] img, iframe[src*="ads.rottentomatoes."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="ads.space."] img, iframe[src*="ads.space."],
+a[href*="ads.techtv."] img, iframe[src*="ads.techtv."],
+a[href*="ads.tripod."] img, iframe[src*="ads.tripod."],
+a[href*="ads.thestar."] img, iframe[src*="ads.thestar."],
+a[href*="ads.usatoday."] img, iframe[src*="ads.usatoday."],
+a[href*="ads.thestranger."] img, iframe[src*="ads.thestranger."],
+a[href*="ads.tripod.lycos."] img, iframe[src*="ads.tripod.lycos."],
+a[href*="ads.stileproject."] img, iframe[src*="ads.stileproject."],
+a[href*="ads.telegraph.co.uk"] img, iframe[src*="ads.telegraph.co.uk"],
+a[href*="ads.theglobeandmail."] img, iframe[src*="ads.theglobeandmail."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="ads.x10."] img, iframe[src*="ads.x10."],
+a[href*="adserver."] img, iframe[src*="adserver."],
+a[href*="ads.web.de"] img, iframe[src*="ads.web.de"],
+a[href*="ads.zdnet."] img, iframe[src*="ads.zdnet."],
+a[href*="ads.web.cs."] img, iframe[src*="ads.web.cs."],
+a[href*="ads.web.aol."] img, iframe[src*="ads.web.aol."],
+a[href*="ads.winsite."] img, iframe[src*="ads.winsite."],
+a[href*="ads.weather."] img, iframe[src*="ads.weather."],
+a[href*="ads.wunderground."] img, iframe[src*="ads.wunderground."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="atdmt."] img, iframe[src*="atdmt."],
+a[href*="ar.atwola."] img, iframe[src*="ar.atwola."],
+a[href*="advertising."] img, iframe[src*="advertising."],
+a[href*="banners.ebay."] img, iframe[src*="banners.ebay."],
+a[href*="backbeatmedia."] img, iframe[src*="backbeatmedia."],
+a[href*="banners.dot.tk"] img, iframe[src*="banners.dot.tk"],
+a[href*="banner.img.co.za"] img, iframe[src*="banner.img.co.za"],
+a[href*="banner.casino.net"] img, iframe[src*="banner.casino.net"],
+a[href*="banner.penguin.cz"] img, iframe[src*="banner.penguin.cz"],
+a[href*="bannermania.nom.pl"] img, iframe[src*="bannermania.nom.pl"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="bfast."] img, iframe[src*="bfast."],
+a[href*="c1.zedo."] img, iframe[src*="c1.zedo."],
+a[href*="bluestreak."] img, iframe[src*="bluestreak."],
+a[href*="cash4banner."] img, iframe[src*="cash4banner."],
+a[href*="cdn.eyewonder."] img, iframe[src*="cdn.eyewonder."],
+a[href*="banners.netcraft."] img, iframe[src*="banners.netcraft."],
+a[href*="bannerserver.gator."] img, iframe[src*="bannerserver.gator."],
+a[href*="banners.friendfinder."] img, iframe[src*="banners.friendfinder."],
+a[href*="banners.wunderground."] img, iframe[src*="banners.wunderground."],
+a[href*="bs00"][href*=".gmx.net"] img, iframe[src*="bs00"][src*=".gmx.net"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="claria."] img, iframe[src*="claria."],
+a[href*="cydoor."] img, iframe[src*="cydoor."],
+a[href*="clickbank."] img, iframe[src*="clickbank."],
+a[href*="filetarget."] img, iframe[src*="filetarget."],
+a[href*="crazypopups."] img, iframe[src*="crazypopups."],
+a[href*="doubleclick."] img, iframe[src*="doubleclick."],
+a[href*="eur.a1.yimg."] img, iframe[src*="eur.a1.yimg."],
+a[href*="clickbank.net"] img, iframe[src*="clickbank.net"],
+a[href*="decisionmark."] img, iframe[src*="decisionmark."],
+a[href*="counter.webtrends.net"] img, iframe[src*="counter.webtrends.net"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="gator."] img, iframe[src*="gator."],
+a[href*="hitbox."] img, iframe[src*="hitbox."],
+a[href*="hit-now."] img, iframe[src*="hit-now."],
+a[href*="kontera."] img, iframe[src*="kontera."],
+a[href*="link4ads."] img, iframe[src*="link4ads."],
+a[href*="fastclick."] img, iframe[src*="fastclick."],
+a[href*="linktarget."] img, iframe[src*="linktarget."],
+a[href*="industrybrains."] img, iframe[src*="industrybrains."],
+a[href*="googleadservices."] img, iframe[src*="googleadservices."],
+a[href*="googlesyndication."] img, iframe[src*="googlesyndication."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="popupad."] img, iframe[src*="popupad."],
+a[href*="pulse360."] img, iframe[src*="pulse360."],
+a[href*="oas.salon."] img, iframe[src*="oas.salon."],
+a[href*="logging.to"] img, iframe[src*="logging.to"],
+a[href*="mediaplex."] img, iframe[src*="mediaplex."],
+a[href*="paycounter."] img, iframe[src*="paycounter."],
+a[href*="mediaplazza."] img, iframe[src*="mediaplazza."],
+a[href*="promos.fling."] img, iframe[src*="promos.fling."],
+a[href*="linkexchange."] img, iframe[src*="linkexchange."],
+a[href*="nedstatbasic.net"] img, iframe[src*="nedstatbasic.net"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="servedby."] img, iframe[src*="servedby."],
+a[href*="qkimg.net"] img, iframe[src*="qkimg.net"],
+a[href*="qksrv.net"] img, iframe[src*="qksrv.net"],
+a[href*="realmedia."] img, iframe[src*="realmedia."],
+a[href*="s1.amazon."] img, iframe[src*="s1.amazon."],
+a[href*="sexcounter."] img, iframe[src*="sexcounter."],
+a[href*="rcm.amazon."] img, iframe[src*="rcm.amazon."],
+a[href*="serving-sys."] img, iframe[src*="serving-sys."],
+a[href*="rightmedia.net"] img, iframe[src*="rightmedia.net"],
+a[href*="rcm-images.amazon."] img, iframe[src*="rcm-images.amazon."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="spinbox."] img, iframe[src*="spinbox."],
+a[href*="trafficmp."] img, iframe[src*="trafficmp."],
+a[href*="sextracker."] img, iframe[src*="sextracker."],
+a[href*="transfer.go"] img, iframe[src*="transfer.go"],
+a[href*="us.a1.yimg."] img, iframe[src*="us.a1.yimg."],
+a[href*="tribalfusion."] img, iframe[src*="tribalfusion."],
+a[href*="tradedoubler."] img, iframe[src*="tradedoubler."],
+a[href*="ukaffiliates2."] img, iframe[src*="ukaffiliates2."],
+a[href*="smartclicks.net"] img, iframe[src*="smartclicks.net"],
+a[href*="traffic-exchange."] img, iframe[src*="traffic-exchange."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="/ad-"] img, iframe[src*="/ad-"],
+a[href*="/ad."] img, iframe[src*="/ad."],
+a[href*="/ad/"] img, iframe[src*="/ad/"],
+a[href*="/ad_"] img, iframe[src*="/ad_"],
+a[href*="/adv/"] img, iframe[src*="/adv/"],
+a[href*="/ads/"] img, iframe[src*="/ads/"],
+a[href*="/ads_"] img, iframe[src*="/ads_"],
+a[href*="/ads-"] img, iframe[src*="/ads-"],
+a[href*="/ads."] img, iframe[src*="/ads."],
+a[href*="/adver"] img, iframe[src*="/adver"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="?ad"] img, iframe[src*="?ad"],
+a[href*="/adx"] img, iframe[src*="/adx"],
+a[href*="_ad_"] img, iframe[src*="_ad_"],
+a[href*="_ad/"] img, iframe[src*="_ad/"],
+a[href*="_ad."] img, iframe[src*="_ad."],
+a[href*="-ad-"] img, iframe[src*="-ad-"],
+a[href*="/adv-"] img, iframe[src*="/adv-"],
+a[href*="/adv."] img, iframe[src*="/adv."],
+a[href*="/adv_"] img, iframe[src*="/adv_"],
+a[href*="?banner"] img, iframe[src*="?banner"] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="/click-"] img, ifrmae[src*="/click-"],
+a[href*="adframe"] img, iframe[src*="adframe"],
+a[href*="/banner"] img, iframe[src*="/banner"],
+a[href*="banners."] img, iframe[src*="banners."],
+a[href*="webstat."] img, iframe[src*="webstat."],
+a[href*="valuead."] img, iframe[src*="valuead."],
+a[href*="webads.co."] img, iframe[src*="webads.co."],
+a[href*="valueclick."] img, iframe[src*="valueclick."],
+a[href*="webtrendslive."] img, iframe[src*="webtrendslive."],
+a[href*="webads.bizservers."] img, iframe[src*="webads.bizservers."] {
+  display: none !important;
+  visibility: hidden !important;
+} 
+
+a[href*="=click"] img, iframe[src*="=click"],
+a[href*="?click"] img, iframe[src*="?click"],
+a[href*="click_"] img, iframe[src*="click_"],
+a[href*="advert"] img, iframe[src*="advert"],
+a img[src*="_sponsor_"], iframe[src*="_sponsor_"],
+a[href*="/adlog.pl"] img, iframe[src*="/adlog.pl"],
+a img[src*="/sponsors/"], iframe[src*="/sponsors/"],
+a img[src*="/marketing/"], iframe[src*="/marketing/"],
+a img[src*="/publicidad/"], iframe[src*="/publicidad/"],
+a img[src*=".yimg.com/a/ya"], iframe[src*=".yimg.com/a/ya"] {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Extra rules for Gmail */
+div[role="main"]>div[class="mq"]>table[class="ae6"],
+div[role="main"]>div[class="mq ae5"]>table[class="ae6"],
+div[class="nH hx"]>div[class="nH"]>div[class="nH PS"]>div[class="Zs"],
+div[role="main"]>div[class="nH g id"]>div[class="nH"]>div[class="nH"]>div[class="mq"],
+div[role="complementary"]>div[class="nH"]>div[class="nH"]>div[class="u5"]>div[class="oM"] {
+  display: none !important;
+  visibility: hidden !important;
+}_Ysafari-extension://com.add0n.adblock-76829B2D75/f789c926/data/content_script/inject_b.cssOFbplist00‘56X$versionX$objectsY$archiverT$top Ü†´%&,-./01U$null€	
+R$3V$classR$6R$1R$9R$4R$7R$2R$5R$0R$8ÄÄ
+Ä Ä	ÄÄ ÄÄ” 
+!#$WNS.base[NS.relativeÄ ÄÄ_Ysafari-extension://com.add0n.adblock-76829B2D75/f789c926/data/content_script/inject_b.css“'()*Z$classnameX$classesUNSURL¢)+XNSObject#Aªf†%∫EXtext/cssiÉ#Ôˇˇˇˇˇˇ“'(23]NSURLResponse¢4+]NSURLResponse_NSKeyedArchiver—78_WebResourceResponseÄ    # - 2 7 C I ` c j m p s v y |  Ç Ö á â ã ç è ë ì ï ó ô õ ¢ ™ ∂ ∏ ∫ º(17:CLNWZchvyáôú≤             9              ¥‘
+O–body{
+	font-family: Times New Roman;
+	background:url(../images/bg_bot.jpg);
+	font-size: 20px;
+}
+table{
+	margin: 0 auto;
+	display: in
+
+
+}
+td{
+
+	font-size: 18px;
+	padding-right: 20px;
+}
+
+header{
+	background:url(../images/bg_top_img.jpg);
+	margin: 10 auto;
+	width: 100%;
+	color: #ffffff;
+	display: block;
+	padding: 2em;
+	text-align: center;
+}
+img{
+	width: 50px;
+}
+img#empresa{
+	width: 100px;
+	height: 100px;
+
+}
+section#log,nav{
+	display: inline-block;
+}
+
+section#log{
+		width: 100%;
+		background:url(../images/bg_top_img.jpg);
+}
+nav{
+	width: 75%;
+	background:url(../images/box_top.jpg);
+}
+nav ul{
+	list-style: none;
+
+}
+nav li{
+	display: inline-block;
+}
+nav li a{
+	text-decoration: none;
+	color: white;
+	font-size: 18px;	
+	padding-right: 20px; 
+
+}
+
+nav li a:hover{
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 0.1em 0.1em;
+	margin: 0.1em 0.1em;	
+
+
+	/*font-size: 1.2em; 	background-image: linear-gradient(to bottom,#FFA500,#FFFF00);
+
+	padding: 0;*/
+}
+section#factura{
+	display: inline-block;
+	
+	}
+section#pago{
+	display: inline-block;
+	padding: 4em;
+
+	}
+section#contenidos{
+	width: 20%;
+	background:url(../images/bg-23.png);
+
+	text-align: center;
+	margin-top: 0.3em;
+	display: inline-block;
+	margin-right: 2em;
+
+}
+aside{
+	display: inline-block;
+	width: 32%;
+	background:black;
+	color: #fff;
+}
+section#contenidos2,footer{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	color: black;
+	text-align: center;
+	margin-top: 0.3em;
+	padding: 0.5em;
+	background: #FFD700;
+}
+
+input{
+	background:url(../images/bg_top_img.jpg);
+	color: white;
+	padding: 1em;
+	border-radius: 0.5em;
+}
+
+tr:hover{
+	
+	color: white;
+	background: #000;
+
+}
+
+input#cantidad{
+	background:url(../images/bg_bot.jpg);
+	color:black;
+	width: 50px;
+	height: 40px;
+	font-size: 12px;
+
+}
+input#agregar{
+	background:url(../images/bg_top_img.jpg);
+	font-size: 14px;
+	color:white;
+	width: 70px;
+	height: 40px;
+	padding: 1em;
+	border-radius: 0.5em;
+
+}
+
+input:hover{
+	background: black;
+}
+input:hover#agregar{
+	background: black;
+}
+}_Shttp://localhost:8888/Cadena-de-Restaurantes/Sico/presentation_layer/css/estilo.cssO∫bplist00‘fgX$versionX$objectsY$archiverT$top Ü†Ø#)*0123KLMNOPQRSTUVWXYZ[\]`aU$null›	
+ !"R$6S$10R$2R$7R$3S$11R$8V$classR$4R$9R$0R$5R$1Ä	ÄÄÄÄÄÄÄ”$%&'(WNS.base[NS.relativeÄ ÄÄ_Shttp://localhost:8888/Cadena-de-Restaurantes/Sico/presentation_layer/css/estilo.css“+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AªfúÏSv »”456@JWNS.keysZNS.objects©789:;<=>?Ä	Ä
+ÄÄÄÄÄÄÄ©ACDEFGHIÄÄÄÄÄÄÄÄÄÄVServer\Content-TypeTEtag]Last-ModifiedTDate]Accept-Ranges^Content-LengthZKeep-AliveZConnection_åApache/2.2.26 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.6 PHP/5.5.10 mod_ssl/2.2.26 OpenSSL/0.9.8zf DAV/2 mod_perl/2.0.8 Perl/v5.18.2Xtext/css_"19834e0-7d0-51bd164559b40"_Mon, 27 Jul 2015 01:37:09 GMT_Mon, 27 Jul 2015 17:07:56 GMTUbytesT2000_timeout=5, max=100ZKeep-Alive“+,^_\NSDictionary¢^/–“+,bc_NSHTTPURLResponse£de/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiver—hi_WebResourceResponseÄ    # - 2 7 X ^ y | Ä É Ü â ç ê ó ö ù † £ ¶ ® ™ ¨ Æ ∞ ± ≥ µ ∑ π ª Ω ø ∆ Œ ⁄ ‹ ﬁ ‡6;FOUXajlnu}àíîñòöúû†¢§Æ∞≤¥∂∏∫ºæ¿¬…÷€ÈÓ¸!∞π◊˜"7BGTWZ_swãô´Æƒ             j              ∆’_WebResourceTextEncodingName_WebResourceFrameNameO-<html lang="es"><head><link rel="stylesheet" href="css/style.css" type="text/css" media="all"><link id="adblock-lite-list" rel="stylesheet" type="text/css" href="safari-extension://com.add0n.adblock-76829B2D75/f789c926/data/content_script/inject_b.css">
+
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	
+</head>
+	<body><header>
+		<section id="log">
+				<h1>Pagos</h1><h1>
+
+		</h1></section>
+
+		<nav id="banners">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="seleccion_empresa.php">Seleccionar Empresa</a></li>
+					<li><a href="carrito.php">Carrito</a></li>
+
+				</ul>	
+		</nav>
+
+	</header>
+<h1>Datos a enviar</h1><br><br><br><section id="factura"><section id="pago"><br><input type="submit" value="Pagar"></section><table cellspacing="1" cellspadding="1" align="left"><tbody><tr><td><b>Nombre</b></td><td>Galo Celly </td></tr><tr><td><b>Total De Productos</b></td><td>33 </td></tr><tr><td><b>Valor Total A Pagar</b></td><td>48.5 </td></tr><tr><td><b>Fecha</b></td><td>2015-07-27 </td></tr><form method="Post" action="enviar_pago.php"></form><input type="hidden" name="nuevo" value="1"><input type="hidden" name="id" value="2"><tr><th><b>Numero tarjeta/banco:</b></th><td><input type="number" min="1" name="cuenta"></td></tr></tbody></table></section></body></html>Ytext/htmlUUTF-8P_Thttp://localhost:8888/Cadena-de-Restaurantes/Sico/presentation_layer/enviar_pago.php    1 5 > P f u ã & / Ñ%B%Ké“è.ëxëÅôUô´ûiûtûíû©£⁄£‰£Í£Î                           §B

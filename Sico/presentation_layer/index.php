@@ -28,30 +28,7 @@
 				<header>
 					<h1><a href="index.php" id="logo">Deliccio Classic European Cuisine</a></h1>
 					<nav>
-						<ul id="top_nav">
-							<li><b>
-								<?php if($sesion) : ?>
-								<?=$_SESSION['nombres'] ?>
-								<?php endif; ?>			
-							</li>
-							<li><br>
-								<?php if($sesion) : ?>
-								<a href="../bussines_layer/logout.php">Actualizar Datos</a>
-								<?php endif; ?>			
-							</li>
-							<li><br>
-								<?php if($sesion) : ?>
-								<a href="../bussines_layer/logout.php">Cerrar Sesion</a>
-								<?php endif; ?>			
-							</li>
-						</ul>
-					</nav>
-					
-					<nav>
 						<ul id="menu">
-						<li><a href="index.php">Inicio</a></li>
-						<li><a href="busqueda.php">Busqueda</a></li>
-						<li><a href="sugerencias.php">Sugerencias</a></li>
 						<li><a href="registro/opcion_registro.php">Registro</a></li>
 						<li><a href="login.php">Login</a></li>
 						</ul>
@@ -66,33 +43,23 @@
 								<li>
 									<img src="images/img1.jpg" alt="">
 									<div class="banner">
-										<strong>Italian<span>Fettuccine</span></strong>
-										<b>Dish of the Day</b>
+										<strong>Comida <span>Gourmet</span></strong>
+										<b>Chefs Internacionales</b>
 										<p>
-											<span>Lorem ipsum dolamet consectetur<br>
-											adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosinci- didunt ut labore et dolore.</span>
+											<span>Lo mejor de la comida<br>
+											estilo gourmet</span>
 										</p>
 									</div>
 								</li>
-								<li>
-									<img src="images/img2.jpg" alt="">
-									<div class="banner">
-										<strong>succulent<span>meat</span></strong>
-										<b>Dish of the Day</b>
-										<p>
-											<span>Lorem ipsum dolamet consectetur <br>
-											adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosinci- didunt ut labore et dolore.</span>
-										</p>
-									</div>
-								</li>
+							
 								<li>
 									<img src="images/img3.jpg" alt="">
 									<div class="banner">
-										<strong>French-Style<span>Tartlet</span></strong>
-										<b>Dish of the Day</b>
+										<strong>Postres</strong>
+										<b>Repostería</b>
 										<p>
-											<span>Lorem ipsum dolamet consectetur <br>
-											adipisicing elit, sed do eiusmod tempor aliqua enim ad minim veniam, quis nosinci- didunt ut labore et dolore.</span>
+											<span>Todo tipo de postres,<br>
+											de todos los sabores para su paladar </span>
 										</p>
 									</div>
 								</li>
@@ -103,35 +70,32 @@
 						<section class="cols">
 							<div class="box">
 								<div>
-									<h2>Welcome <span>to Us!</span></h2>
+									<h2>Las <span>Empresas</span></h2>
 									<figure><img src="images/page1_img1.jpg" alt="" ></figure>
-									<p class="pad_bot1">This <a href="http://blog.templatemonster.com/2011/08/01/free-website-template-jquery-slider-typography-restaurant/" class="list_1">Deliccio Template</a> goes with two packages – with PSD source files and without them. PSD source is available for free for the registered members.</p>
-									<a href="#" class="button1">Read More</a>
+									<p>Conoce más sobre las empresas con las que tenemos convenio</p>
+									<a href="#" class="button1">Leer Más</a>
 								</div>
 							</div>
 						</section>
 						<section class="cols pad_left1">
 							<div class="box">
 								<div>
-									<h2>About <span>Us</span></h2>
+									<h2>Quieres <span>Unirte?</span></h2>
 									<figure><img src="images/page1_img2.jpg" alt="" ></figure>
-									<p class="pad_bot1">This is one of <a href="http://blog.templatemonster.com/free-website-templates/" target="_blank">free website templates</a> created by TemplateMonster.com team. This website template is optimized for 1024x768 screen res.</p>
-									<a href="#" class="button1">Read More</a>
+									<p>Mira los pasos que debes seguir, para poder ser parte de la página</p>
+									<a href="#" class="button1">Leer Más</a>
+									
 								</div>
 							</div>
 						</section>
 						<section class="cols pad_left1">
 							<div class="box">
 								<div>
-									<h2>Our <span>Services</span></h2>
+									<h2>Suge<span>rencias</span></h2>
 									<figure><img src="images/page1_img3.jpg" alt="" ></figure>
-									<ul class="list1 pad_bot1">
-										<li><a href="#">Lorem ipsum dolor sit amet</a></li>
-										<li><a href="#">Consectetur adipisicing elit sed</a></li>
-										<li><a href="#">Eiusmod tempor incididunt labore</a></li>
-										<li><a href="#">Ut enim ad minim veniam</a></li>
-									</ul>
-									<a href="#" class="button1">Read More</a>
+									<p>Si tienes problemas, recomendaciones, será un gusto atenderte</p>
+									<a href="#" class="button1">Leer Más</a>
+									
 								</div>
 							</div>
 						</section>
@@ -141,78 +105,7 @@
 		</div>
 	</div>
 </div>
-<div class="body2">
-	<div class="main">
-		<article id="content2">
-			<div class="wrapper">
-				<section class="col1 pad_left1">
-					<h2>Upcoming Events</h2>
-					<div class="wrapper">
-						<div class="cols">
-							<div class="wrapper pad_bot2">
-								<figure class="left marg_right1"><img src="images/page1_img4.jpg" alt=""></figure>
-								<p>
-									<a href="#">20.07. Sed perspiciatis</a><br>
-									Unde omnis iste natus error volu accusantium doloremque.
-								</p>
-							</div>
-							<div class="wrapper">
-								<figure class="left marg_right1"><img src="images/page1_img5.jpg" alt=""></figure>
-								<p>
-									<a href="#">18.07. Quasi architecto</a><br>
-									Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem.
-								</p>
-							</div>
-						</div>
-						<div class="cols pad_left1">
-							<div class="wrapper pad_bot2">
-								<figure class="left marg_right1"><img src="images/page1_img6.jpg" alt=""></figure>
-								<p>
-									<a href="#">11.07. Laudaum totam</a><br>
-									Rem aperiam, eaque ipsa quae ab illo inventore veritatis.
-								</p>
-							</div>
-							<div class="wrapper">
-								<figure class="left marg_right1"><img src="images/page1_img7.jpg" alt=""></figure>
-								<p>
-									<a href="#">09.07. Volups asrnatur</a> <br>
-									Aut odit aut fugit, sed quia consequuntur magni dolores eos qui.
-								</p>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="col2 pad_left1">
-					<h2>Testimonials</h2>
-					<ul class="testimonials">
-						<li>
-							<span>1</span>
-							<p>
-								“Remperam eaquepsa quae abillo inventore vertatis.”
-								<img src="images/signature1.jpg" alt="">
-							</p>
-						</li>
-						<li>
-							<span>2</span>
-							<p>
-								“Quasi arctecto beatae vitae dicta sunt explicabo.”
-								<img src="images/signature2.jpg" alt="">
-							</p>
-						</li>
-						<li>
-							<span>3</span>
-							<p>
-								“Nemo enim ipsam volupta<br>
-								tem quia voluptas.”<img src="images/signature3.jpg" alt="">
-							</p>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</article>
-<!-- / content -->
-	</div>
-</div>
+
 <div class="body3">
 	<div class="body4">
 		<div class="main">
@@ -220,17 +113,14 @@
 			<footer>
 				<div class="wrapper">
 					<section class="col1 pad_left1">
-						<h3>Toll Free: <span>1-800 123 45 67</span></h3>
-						<a rel="nofollow" href="http://www.templatemonster.com/" target="_blank">Website Template</a> by TemplateMonster.com
+						<h3>Realizado Por: <span><br>Celly G. Cueva J. Fierro J. Pardo J.</span></h3>
 					</section>
 					<section class="col2 pad_left1">
-						<h3>Follow Us </h3>
+						<h3>Buscanos también: </h3>
 						<ul id="icons">
-							<li><a href="#" class="normaltip" title="Facebook"><img src="images/icon1.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Linkedin"><img src="images/icon2.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Twitter"><img src="images/icon3.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Delicious"><img src="images/icon4.gif" alt=""></a></li>
-							<li><a href="#" class="normaltip" title="Technorati"><img src="images/icon5.gif" alt=""></a></li>
+							
+							<li><a href="#" class="normaltip" title="twiiter"><img src="images/icon3.gif" alt=""></a></li>
+							<li><a href="#" class="normaltip" title=" facebook"><img src="images/icon1.gif" alt=""></a></li>
 						</ul>
 					</section>
 				</div>
@@ -240,6 +130,5 @@
 		</div>
 	</div>
 </div>
-<script type="text/javascript"> Cufon.now(); </script>
 </body>
 </html>
