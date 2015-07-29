@@ -13,7 +13,7 @@
 	if (!function_exists('consultar_pago2')){
 		function consultar_pago2()
 		{
-		$SQL_con="SELECT * from pago where nombre='Galo Celly'";	
+		$SQL_con="SELECT * from pago where nombre like '%o%' and fecha >= CURRENT_DATE";	
 		$resultado_ins= mysql_query($SQL_con);
 		while ($rowPedi = mysql_fetch_array($resultado_ins,MYSQL_ASSOC))	
 		{
@@ -23,8 +23,8 @@
     	}
 	}
 
-	if (!function_exists('realizar_pago3')){
-		function realizar_pago3($id,$cuenta)
+	if (!function_exists('realizar_pagos2')){
+		function realizar_pagos2($id,$cuenta)
 		{
 	  	include ("conect.php");
 			$SQL_con="UPDATE pago 
@@ -34,5 +34,18 @@
 			$resultado_ins= mysql_query($SQL_con) or die(mysql_error($link));	
 		}
 	
+	}
+
+	if (!function_exists('consultar_total_pagos2')){
+		function consultar_total_pagos2()
+		{
+		$SQL_con="SELECT * from pago ";	
+		$resultado_ins= mysql_query($SQL_con);
+		while ($rowPedi = mysql_fetch_array($resultado_ins,MYSQL_ASSOC))	
+		{
+		  $pago[]=$rowPedi;
+		}
+		return array ($pago);
+    	}
 	}
 ?>

@@ -107,4 +107,23 @@
 			alta_baja_empres($id,$estado);
 		}
 	}
+	
+	if (!function_exists('busqueda_emp')){
+		function busqueda_emp($estado,$criterio)
+				{		
+					foreach (glob("../persistence_layer/*.php") as $filename)
+					{
+						include $filename;
+					}
+					include ("../class/empresa.php");
+					$empresa = busquedas_emp($estado,$criterio);
+					foreach ($empresa as $emp) 
+					{					
+						$clase_empresa = new empresa;	
+						$clase_empresa->__construct2($emp["id_empresa"],$emp["nombre"],$emp["categoria"],null,null,$emp["url"],$emp["estado"]);		
+						$arreglo_clases[]=$clase_empresa;
+					}					
+					return $arreglo_clases;
+				}
+	}
 ?>

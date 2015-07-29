@@ -5,10 +5,19 @@
 	  	include ("conect.php");
 		$SQL_con="SELECT cantidad from pedido where id_producto=".$id."";	
 		$resultado_ins= mysql_query($SQL_con) or die(mysql_error($link));
-		
+		/*if (mysql_num_rows($resultado_ins)>0){
+			$pedido= mysql_fetch_array($resultado_ins,MYSQL_ASSOC);
+			echo $pedido[0];
+			$nuevac=$pedido+$cantidad;
+			$SQL_con="UPDATE pedido set cantidad=".$nuevac."
+			where id_producto=".$id."";	
+				$resultado_ins= mysql_query($SQL_con) or die(mysql_error($link));
+		}	else{*/
 				$SQL_con="INSERT into pedido (id_producto,cantidad,fecha,id_persona)
 				values ('".$id."','".$cantidad."','".$fecha."','1')";	
-				$resultado_ins= mysql_query($SQL_con) or die(mysql_error($link));	
+				$resultado_ins= mysql_query($SQL_con) or die(mysql_error($link));
+		/*}	*/
+		
 	}
 	
 	}

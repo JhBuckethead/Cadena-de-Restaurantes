@@ -1,4 +1,4 @@
-
+ 
 <!DOCTYPE html>
 <html>	
 <head>
@@ -20,7 +20,7 @@
 	<div class="login-info"> </div>
 		<h2>SICO</h2>
 			<div class="form-info">
-				<form action="empresas.php" method="post" name="empresas">
+				<form action="#" method="post" name="empresas">
 					<input type="submit" value="EMPRESAS">
 				</form>
 				<br>

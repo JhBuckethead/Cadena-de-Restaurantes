@@ -1,10 +1,8 @@
-<?php
-	
+<?php	
 	echo "<link rel='stylesheet' href='css/style.css' type='text/css' media='all'>";
-	include ("../bussines_layer/gestion_empresa_bussines.php");
-	include ("../class/empresa.php");
-	include("../bussines_layer/comprobar_sesion.php");
-
+	include ("../bussines_layer/gestion_pago.php");
+	include ("../persistence_layer/conect.php");
+	include ("../class/pago.php");
 	echo "<!DOCTYPE html>
 <html lang = 'es'>
 <head>
@@ -52,21 +50,32 @@
 	</header>
 <body>";
 		echo "<section id='opcion'>";
-
-	if(isset($_GET["busqueda"])){		
-		$empresa=busqueda_emp(1,$_GET['busqueda']);
-	}else{			
-		$empresa=catalogo_empresa(1);
+	if(isset($_POST["nuevo"]))
+	{
+		echo "hola";
+	}else{
+		list ($pago)=consultar_total_pagos();
+			echo "<h1>Pedidos/Pagos realizados</h1><br><br><br>";
+			echo"<section id='factura'>";
+				
+				echo "<table cellspacing=1 cellspadding=1 align=left  >";
+				echo "<tr >";
+					echo "<td><b>Nombre</td>";
+					echo "<td><b>Total De Productos</td>";
+					echo "<td><b>Valor Total A Pagar</td>";
+					echo "<td><b>Fecha</td>";
+					echo "<td><b>Estado</td>";
+				echo "</tr>";
+			for ($i = 0; $i <count($pago); $i++) 	
+			{	
+				echo "<tr >";
+					echo "<td>".$pago[$i]['nombre']." </td>";
+					echo "<td>".$pago[$i]['total_productos']." </td>";
+					echo "<td>".$pago[$i]['total_pago']." </td>";
+					echo "<td>".$pago[$i]['fecha']." </td>";
+					echo "<td>".$pago[$i]['estado']." </td>";
+				echo "</tr>";			
+			echo "</section>";				
+			}
 	}
-		echo "</section>"; 
-	for ($i = 0; $i <count($empresa); $i++) 
-	{	
-		echo "<section id=contenidos class='cols'>";
-		echo	"<h3><br> ".$empresa[$i]->get_nombre()." </h3>
-				<p class='pad_bot1'> ". $empresa[$i]->get_categoria()."</p>
-				<img id= 'empresa' src='". $empresa[$i]->get_url()."'<height='50' width='50' /img><br>";
-		echo 	"<br><a href='gestion_empresa_modificar.php?id=".$empresa[$i]->get_id_empresa()."' class='button1'>Modificar Empresa</a><br><br>
-				<a href='gestion_producto.php?empre=".$empresa[$i]->get_id_empresa()."' class='button1'>Modificar Productos</a>
-				 <br><br><a href='gestion_empresa_eliminar.php?id=".$empresa[$i]->get_id_empresa()."' class='button1'>Dar de Baja</a></section>";
-	}	
 ?>

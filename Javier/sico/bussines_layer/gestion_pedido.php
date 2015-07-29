@@ -1,19 +1,18 @@
 
 <?php	
-if (!function_exists('realizar_pedido')){
+	if (!function_exists('realizar_pedido')){
 
-	function realizar_pedido($id ,$cantidad,$fecha)
-	{	
-		foreach (glob("../persistence_layer/*.php") as $filename)
+		function realizar_pedido($id ,$cantidad,$fecha)
+		{	
+			foreach (glob("../persistence_layer/*.php") as $filename)
 		{
 			include $filename;
 		}
 		include ("../class/pedido.php");
 		realizar_pedido2($id , $cantidad,$fecha);
+
+		}
 	}
-}
-
-
 if (!function_exists('consultar_carrito')){
 
 function consultar_carrito($id_persona)
@@ -25,7 +24,16 @@ include $filename;
 include ("../class/pedido.php");
 
 list ($carrito_persona,$carrito) = consultar_carrito2($id_persona);
-return array ($carrito_persona, $carrito);
+
+	$pago=0;
+	$productos=0;
+	for ($i = 0; $i <count($carrito); $i++) 	
+	{	
+		$pago=$carrito[$i]['precio']*$carrito[$i]['cantidad']+$pago;	
+		$productos=$carrito[$i]['cantidad']+$productos;
+	}	
+return array ($carrito_persona, $carrito,$pago,$productos);
+
 
 }
 }

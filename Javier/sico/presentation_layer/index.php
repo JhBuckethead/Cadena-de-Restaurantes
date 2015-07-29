@@ -27,10 +27,6 @@
 <!-- header -->
 				<header>
 					<h1><a href="index.php" id="logo">Deliccio Classic European Cuisine</a></h1>
-					<?php if($sesion) : ?>
-					Welcome <?= $_SESSION['nombres'] ?>
-					<a href="../bussines_layer/logout.php">Cerrar Sesion</a>
-					<?php endif; ?>
 					<nav>
 						<ul id="menu">
 						<li><a href="index.php">Inicio</a></li>
@@ -40,7 +36,7 @@
 						<li><a href="login.php">Login</a></li>
 						</ul>
 					</nav>
-				</header><div class="ic">More Website Templates  @ TemplateMonster.com - August 1st 2011!</div>
+				</header>
 <!-- / header -->
 <!-- content -->
 				<article id="content">

@@ -6,7 +6,7 @@
 		$rowEmp=recuperar_empresa($_POST["empresa"]);		
 		insertar_producto($_POST["nombre"],$_POST["descripcion"],$_POST["precio"],$rowEmp->get_empresa(),$_POST["stock"],$_POST["url"],1);
 		echo "<div align=center><h1>SU PRODUCTO SE HA GUARDADO CON EXITO!!
-		<meta http-equiv='Refresh' content='2;url=gestion_producto.php'></font></h1></div>";
+		<meta http-equiv='Refresh' content='2;url=gestion_empresa.php'></font></h1></div>";
 	}else{		
 		$empresas=catalogo_empresas2();
 		echo "<div align=center><h1>NUEVO PRODUCTO</h1><br>";

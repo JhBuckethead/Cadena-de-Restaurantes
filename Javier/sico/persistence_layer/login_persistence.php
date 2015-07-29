@@ -1,7 +1,8 @@
 <?php
+	
 	if (!function_exists('login_persis')){
-		function login_persis()
-		{
+	function login_persis()
+	{
 		require("../persistence_layer/conect.php");
 
 		$alias = mysql_real_escape_string($_POST['usuario']);
@@ -11,6 +12,5 @@
 		pass = '" . $password . "'", $link);
 
 		return $consulta;
-		}
-	}
+	}}
 ?>

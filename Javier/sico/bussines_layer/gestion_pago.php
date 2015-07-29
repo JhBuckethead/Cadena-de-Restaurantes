@@ -27,9 +27,9 @@
 		}
 	}
 
-	if (!function_exists('realizar_pago2')){
+	if (!function_exists('realizar_pagos')){
 		
-		function realizar_pago2($id,$cuenta)
+		function realizar_pagos($id,$cuenta)
 		{	
 			foreach (glob("../persistence_layer/*.php") as $filename)
 			{
@@ -37,7 +37,22 @@
 			}
 			include ("../class/pago.php");
 			
-			realizar_pago3($id,$cuenta);
+			realizar_pagos2($id,$cuenta);
 		}
 	}
+	
+	if (!function_exists('consultar_total_pagos')){
+
+		function consultar_total_pagos()
+		{	
+			foreach (glob("../persistence_layer/*.php") as $filename)
+			{
+				include $filename;
+			}
+			include ("../class/pago.php");
+			list ($pago) = consultar_total_pagos2();
+			return array ($pago);
+		}
+	}
+	
 ?>
